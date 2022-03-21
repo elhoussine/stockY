@@ -13,3 +13,385 @@
  *= require_tree .
  *= require_self
  */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+body {
+    font-family: 'Abel', sans-serif;
+}
+
+.content {
+    height: 100%;
+}
+
+.map {
+    width: 500px;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+.reviews {
+    float: left;
+}
+
+.review-form {
+    float: left;
+}
+
+.bench-index-item {
+    border: 1px solid black;
+    width: 100%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bench-index-item img {
+    height: 200px;
+    max-width: 130px;
+}
+
+.user-pane {
+    display: flex;
+    justify-content: center;
+}
+
+.right-half {
+    width: 400px;
+    margin-left: 50px;
+    margin-top: 40px;
+    height: 480px;
+    overflow-y: scroll;
+    padding: 0 20px 20px 20px;
+}
+
+.right-half.bench-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.index-item-info {
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.index-item-category {
+    font-weight: bold;
+}
+
+.index-item-copy {
+    margin-left: 15px;
+}
+
+header {
+    margin-left: 5%;
+}
+
+h1,
+h5 {
+    margin-bottom: 0px;
+}
+
+.single-bench-show {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.single-bench-map {
+    display: flex;
+    flex-direction: column;
+}
+
+.bench-list {
+    padding-left: 0;
+    list-style-position: inside;
+    margin-top: 0;
+}
+
+.index-image {
+    max-height: 200px;
+    max-width: 100px;
+}
+
+.review-button,
+.review-form {
+    width: 100px;
+    margin-top: 20px;
+}
+
+.review-button {
+    /* padding-top: 1px; */
+}
+
+.header-name {
+    margin: 7px 0 0 0;
+
+}
+
+.header-favorites {
+    margin: 4px 0 4px 0;
+    font-size: 14px;
+}
+
+.new-bench-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.new-bench-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    outline: black 1px solid;
+    padding: 5px 30px 10px 30px;
+}
+
+.new-bench-title {
+    text-align: center;
+}
+
+.new-bench-button {
+    margin: 5px;
+}
+
+input.bench-field {
+    margin: 10px;
+    padding: 2px;
+}
+
+label.bench-field {
+    width: 125px;
+    display: inline-block;
+}
+
+.button-holder {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+input.new-bench-button {
+    width: 160px;
+    margin-top: 10px;
+}
+
+button.new-bench-button {
+    width: 160px;
+}
+
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.login-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.login-input {
+    margin-left: 20px;
+}
+
+.login-form-box {
+    outline: 1px solid black;
+    padding: 20px;
+}
+
+.filter {
+    font-weight: bold;
+}
+
+.header-link {
+    text-decoration: none;
+    color: black;
+}
+
+hr {
+    border-bottom: 1px solid grey;
+}
+
+.session-submit {
+    text-transform: capitalize;
+}
+
+/*********************/
+
+.login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+}
+
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.form button:hover,
+.form button:active,
+.form button:focus {
+    background: #43A047;
+}
+
+.form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+}
+
+.form .message a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.form .register-form {
+    display: none;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.container:before,
+.container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container .info {
+    margin: 50px auto;
+    text-align: center;
+}
+
+.container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #1a1a1a;
+}
+
+.container .info span {
+    color: #4d4d4d;
+    font-size: 12px;
+}
+
+.container .info span a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.container .info span .fa {
+    color: #EF3B3A;
+}
+
+body {
+    background: #61817a;
+    /* fallback for old browsers */
+    background: rgb(95, 128, 120);
+    background: linear-gradient(90deg, rgb(101, 155, 143) 0%, rgb(89, 139, 131) 50%);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input[type=text],
+input[type=password],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+input[type=password]:focus {
+    background-color: lightblue;
+}
+
+div {
+    border-radius: 5px;
+    /*background-color: #f2f2f2;*/
+    padding: 20px;
+}

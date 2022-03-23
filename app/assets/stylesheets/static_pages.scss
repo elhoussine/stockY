@@ -1,3 +1,114 @@
-// Place all the styles related to the staticPages controller here.
+// Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+// body {
+//     height: 100vh;
+//     width: 100vw;
+// }
+body {
+    height: 100vh;
+    width: 100vw;
+    background: #61817a;
+    background: rgb(95, 128, 120);
+    background: linear-gradient(90deg, rgb(101, 155, 143) 0%, rgb(89, 139, 131) 50%);
+}
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+#app-div {
+    display: flex;
+    width: 100vw;
+    height: 100%;
+    flex-direction: column;
+}
+
+#main-div {
+    position: relative;
+    display: flex;
+    margin-top: min(20%, 90px);
+    min-height: 80vh;
+    width: 100vw;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#splash-div {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#splash-div>img {
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+#splash-div>ul {
+    position: fixed;
+    z-index: 2;
+    color: black;
+    width: 75%;
+    height: 50%;
+    font: 16px 'proxima-nova', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px #777777;
+    // margin-left: 15px;
+    // margin-right: 15px;
+    // margin-top: 10px;
+    // margin-bottom: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#splash-div>ul>li:first-child {
+    font-size: 24px;
+    text-align: center;
+    // margin-top: 10px;
+    // margin-bottom: 15px;
+}
+
+#splash-div>ul>li {
+    // margin-top: 5px;
+    // margin-bottom: 5px;
+}
+
+
+#splash-div>div {
+    background-color: white;
+    width: 80%;
+    height: 50%;
+    z-index: 0;
+    position: fixed;
+    opacity: .75;
+    border-radius: 25px;
+}

@@ -1,0 +1,1 @@
+json.extract! product, :id, :name, :style, :color, :price, :brand, :image, :description, :release_date, :seller_id, :category_id

@@ -4,7 +4,7 @@ const SIZES = [3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11
 
 const formatMoney = (number) => {
   let n;
-  if(number < 0) {
+  if (number < 0) {
     n = number.toString().split('');
     n.splice(1, 0, '$');
     return n.join('');
@@ -13,10 +13,10 @@ const formatMoney = (number) => {
   }
 };
 
-export default ({product, sales, orders, updateOrder, createSale, addItem, currentUserId}) => {
+export default ({ product, sales, orders, updateOrder, createSale, addItem, currentUserId }) => {
   currentUserId = parseInt(currentUserId);
-  if (sales.length === 0) sales = [{price: 0}, {price: 0}];
-  if (sales.length === 1) sales.unshift({price: 1})
+  if (sales.length === 0) sales = [{ price: 0 }, { price: 0 }];
+  if (sales.length === 1) sales.unshift({ price: 1 })
   let sEnd = sales.length - 1;
   let hBid = orders[0].price || -1;
   let lAsk = orders[1].price || -1;
@@ -101,8 +101,8 @@ export default ({product, sales, orders, updateOrder, createSale, addItem, curre
           //   size: `${orders[0].sex} ${orders[0].size}`
           // }
           // addItem(pItem).then(() => {
-            location.reload();
-            // window.location.href = window.location.origin + `/#/profile/portfolio`;
+          location.reload();
+          // window.location.href = window.location.origin + `/#/profile/portfolio`;
           // })
         })
       })
@@ -114,14 +114,14 @@ export default ({product, sales, orders, updateOrder, createSale, addItem, curre
   return (
     <div id="product-orders">
       <span id="product-orders-size">
-        <p>Size</p> 
-        <span>All<input type="hidden" /></span> 
+        <p>Size</p>
+        <span>All<input type="hidden" /></span>
       </span>
       <span id="this-will-be-a-gray-line"></span>
       <span id="product-orders-last-sale">
         <span id="p-last-sale-top">
           <p className="last-sale-bold">Last Sale</p>
-          <p id="last-sale-num">{formatMoney(sales[sEnd].price)}</p> <p id="last-sale-change" style={lastDiff > 0 ? {color: 'green'} : lastDiff < 0 ? {color: 'red'} : {color: 'black'}}>{`${formatMoney(lastDiff)} (${Math.round((lastDiff * 100) / sales[sEnd - 1].price)}%)`} </p>
+          <p id="last-sale-num">{formatMoney(sales[sEnd].price)}</p> <p id="last-sale-change" style={lastDiff > 0 ? { color: 'green' } : lastDiff < 0 ? { color: 'red' } : { color: 'black' }}>{`${formatMoney(lastDiff)} (${Math.round((lastDiff * 100) / sales[sEnd - 1].price)}%)`} </p>
         </span>
         <span id="p-last-sale-bottom">
           {/* <p>Size {sales[sEnd].size}</p>

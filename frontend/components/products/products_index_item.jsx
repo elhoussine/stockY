@@ -9,19 +9,19 @@ export default ({ product }) => {
     <li className="products-index-item">
       <Link to={linkPath}>
         <span className="products-index-img">
-          <img src={product.img_path} />
+          <img src={product.image} />
         </span>
         <span className="products-index-tag">
           <h3>
             <ul>
               <li>
-                {product.model}
+                {product.brand}
               </li>
               <li>
                 "{product.name}"
               </li>
               <li className="prod-style-code">
-                {product.style_code}
+                {product.style}
               </li>
             </ul>
           </h3>

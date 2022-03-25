@@ -32,7 +32,7 @@ export default class Splash extends React.Component {
             Welcome to StockY!
           </li>
           <li>
-            This website is a clone of popular exchange StockX, which serves as a marketplace for collector sneakers, clothing, accessories and more....
+            This website is a clone of popular exchange StockX, which serves as a marketplace for collector sneakers, clothing, accessories and more...
           </li>
           <li>
             Here, you are able to buy and sell various products. Bought products are automatically added to your portfolio, which will track price changes as well as any gains or losses in your inventory.

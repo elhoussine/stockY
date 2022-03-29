@@ -1,50 +1,51 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// const imageUrl = require('~/app/assets/images/sneakers-sport-watch-with-copy-space.jpg');
+const backgroundUrl = 'https://img.freepik.com/free-vector/flat-hand-drawn-people-shopping-sale-illustration_23-2148829747.jpg?t=st=1647931936~exp=1647932536~hmac=5549ddf7a5ff3fd1ee65d77e49698e595b8c186031763455a323f8506b4424ac&w=2000';
 export default class Splash extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    // if (this.props.loggedIn) {
-    //   return (
-    //     <div id="splash-div">
-    //       <Link to="/profile">Profile</Link>
-    //     </div>
-    //   )
-    // } else {
-    //   return (
-    //     <div id="splash-div">
-    //       <Link to="/login">Log In</Link>
-    //       <Link to="/register">Register</Link>
-    //     </div>
-    //   )
-    // }
     return (
       <div id="splash-div">
-        <img src='https://img.freepik.com/free-vector/flat-hand-drawn-people-shopping-sale-illustration_23-2148829747.jpg?t=st=1647931936~exp=1647932536~hmac=5549ddf7a5ff3fd1ee65d77e49698e595b8c186031763455a323f8506b4424ac&w=2000' />
+        <img src={backgroundUrl} />
         <div id="splash-bg">
 
         </div>
         <ul>
           <li>
-            Welcome to StockY!
+            Welcome!
           </li>
           <li>
-            This website is a clone of popular exchange StockX, which serves as a marketplace for collector sneakers, clothing, accessories and more...
+            This app is a functional clone of popular shoe and clothing marketplace StockX.
           </li>
           <li>
-            Here, you are able to buy and sell various products. Bought products are automatically added to your portfolio, which will track price changes as well as any gains or losses in your inventory.
+            Users are able to trade a variety of limited edition sneakers and basketball shoes.
           </li>
           <li>
-            You may also add items to a watch list, allowing you to track their price and see the highest price others are willing to pay for it, or the lowest price you are able to buy it for immediately.
+            Items may be added to a user's portfolio, allowing users to track price or value.
           </li>
           <li>
-            Market prices of items are automatically updated to the last sale price of the item.
+            Users are also able to search for items using a variety of factors such as name, brand, model, and colors.
           </li>
           <li>
-            Please register for an account or login as a guest to begin!
+            You will then be able to view your portfolio, and any listings / orders you have placed in your profile.
+          </li>
+          <li>
+            You may then browse for a product or search for one by name, model, brand, color, and more.
+          </li>
+          <li>
+            After clicking on a product, you will then be able to see the item details or make a transaction.
+          </li>
+          <li>
+            If there are any listing products available, you will be able to buy the item. It will be automatically added to your portfolio.
+          </li>
+          <li>
+            If you list any products for sell, you will be able to sell the item.
+          </li>
+          <li>
+            To begin, create an account, login, or use the guest account.
           </li>
         </ul>
       </div>

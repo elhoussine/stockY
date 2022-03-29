@@ -10,7 +10,7 @@
   flex-direction: row;
 }
 
-#listings-links > a {
+#listings-links>a {
   display: flex;
   color: black;
   font-family: 'proxima-nova', sans-serif;
@@ -35,6 +35,7 @@
   letter-spacing: 1px;
   font-size: 12px;
 }
+
 #listings-selling {
   width: calc(100% - 10px);
   margin-left: 10px;
@@ -44,6 +45,7 @@
   letter-spacing: 1px;
   font-size: 12px;
 }
+
 #listings-buy-header {
   text-transform: uppercase;
   font-size: 16px;
@@ -62,7 +64,7 @@
   cursor: default;
 }
 
-#listings-buy-table-heading > tr {
+#listings-buy-table-heading>tr {
   height: 5vh;
   color: #333;
 }
@@ -85,7 +87,7 @@
 
 }
 
-.listing-col0 > a {
+.listing-col0>a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,6 +108,7 @@
 .listing-item-pic {
   margin-right: 2%;
 }
+
 .listing-item-info {
   display: flex;
   flex-direction: row;
@@ -128,6 +131,7 @@
   display: flex;
   justify-content: center;
 }
+
 #listings-sell-header {
   text-transform: uppercase;
   font-size: 16px;
@@ -146,7 +150,7 @@
   cursor: default;
 }
 
-#listings-sell-table-heading > tr {
+#listings-sell-table-heading>tr {
   height: 5vh;
   color: #333;
 }
@@ -172,26 +176,34 @@
 #listings-form-div {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  //margin-left: 10px;
+  width: 100%;
 }
 
 #listings-form {
+  margin: auto;
   display: flex;
   flex-direction: column;
-  width: 250px;
-  font-size: 24px;
+  width: 350px;
+  //font-size: px;
   font-family: 'proxima-nova', sans-serif;
   border: 1px solid #c3c3c3;
   padding: 5px;
   letter-spacing: 1px;
 }
 
-#listings-form > label > select {
+#listings-form>label>select {
+  float: right;
   font-size: 16px;
   font-family: 'proxima-nova', sans-serif;
   letter-spacing: 1px;
 
 }
+
+#listings-form>label>* {
+  float: right;
+}
+
 #listings-form-type-dropdown {
   width: 100%;
 }
@@ -199,12 +211,15 @@
 #listings-form-product-dropdown {
   width: 100%;
 }
+
 #listings-form-size-sex-dropdown {
   width: 50%;
 }
+
 #listings-form-size-num-dropdown {
   width: 50%;
 }
+
 #listings-form-price {
   width: 98%;
   font-size: 16px;
@@ -212,18 +227,19 @@
   letter-spacing: 1px;
 
 }
+
 #listings-form-submit {
-  width: 100%;
+  width: 50%;
   height: 40px;
   background-color: #999999;
   color: white;
   font: bold 14px 'proxima-nova', sans-serif;
   letter-spacing: 1px;
-  margin-top: 5px;
-
+  margin: auto;
+  text-align: center;
 }
 
-#listings-success { 
+#listings-success {
   display: flex;
   justify-content: left;
   margin-left: 10px;

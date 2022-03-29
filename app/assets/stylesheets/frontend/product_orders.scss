@@ -4,7 +4,7 @@
   flex-direction: row;
   align-items: center;
   width: 70vw;
-  font-family: 'proxima-nova', sans-serif;
+  //font-family: 'proxima-nova', sans-serif;
   letter-spacing: 1px;
   font-size: 16px;
   color: #888888;
@@ -16,11 +16,11 @@
   padding: 10px;
 }
 
-#product-orders-size > p {
+#product-orders-size>p {
   font-weight: bold;
 }
 
-#product-orders-size > span {
+#product-orders-size>span {
   font-size: 30px;
   color: black;
   padding-top: 5px;
@@ -72,7 +72,7 @@
   width: 75%;
 }
 
-#p-last-sale-bottom > p {
+#p-last-sale-bottom>p {
   color: black;
   padding: 10px;
 }
@@ -91,7 +91,7 @@
   align-items: center;
 }
 
-#prod-asks > button {
+#prod-asks>button {
   display: flex;
   flex-direction: row;
   background-color: #509e2f;
@@ -103,7 +103,7 @@
   border-radius: 5px;
 }
 
-#prod-asks > button:hover {
+#prod-asks>button:hover {
   background-color: green;
   cursor: pointer;
 }
@@ -116,7 +116,7 @@
   justify-content: space-evenly;
 }
 
-#asks-bottom > p {
+#asks-bottom>p {
   color: #333;
   font-size: 12px;
 }
@@ -129,12 +129,12 @@
   width: 60%;
 }
 
-#asks-left > p {
+#asks-left>p {
   color: #c6e6c2;
   font-size: 18px;
 }
 
-#asks-left > #p-ask-price {
+#asks-left>#p-ask-price {
   color: white;
   font-size: 30px;
 }
@@ -170,7 +170,7 @@
   align-items: center;
 }
 
-#prod-bids > button {
+#prod-bids>button {
   display: flex;
   flex-direction: row;
   background-color: #ff5a5f;
@@ -182,7 +182,7 @@
   border-radius: 5px;
 }
 
-#prod-bids > button:hover {
+#prod-bids>button:hover {
   cursor: pointer;
   background-color: #cc4c4c;
 }
@@ -195,7 +195,7 @@
   justify-content: space-evenly;
 }
 
-#bids-bottom > p {
+#bids-bottom>p {
   color: #333;
   font-size: 12px;
 }

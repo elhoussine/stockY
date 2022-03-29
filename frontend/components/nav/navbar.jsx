@@ -57,23 +57,23 @@ export default class NavBar extends React.Component {
             <Link to="/products">
               <li id="navbar-browse" className="navbar-dropdown">Products</li>
             </Link>
-            <Link to="/profile/portfolio">
+            {/* <Link to="/profile/portfolio">
               <li id="navbar-portfolio">Portfolio</li>
-            </Link>
-            {/* <Link to="/about">
-              <li id="navbar-about" className="navbar-dropdown">About/Help</li>
             </Link> */}
+            <Link to="/about">
+              <li id="navbar-about" className="navbar-dropdown">About</li>
+            </Link>
             {this.state.loggedIn ?
               <Link to="/profile">
                 <li id="navbar-my-account" className="navbar-dropdown">My Account</li>
               </Link> : <span id="navbar-auth"><Link to="/login"><li id="navbar-login">Login</li></Link>
                 <Link to="/register"><li id="navbar-register">Register</li></Link></span>}
           </ul>
-          {/* <span id="navbar-els2">
+          <span id="navbar-els2">
             <Link to="/profile/listings/new">
               <button id="navbar-sell-btn">Sell</button>
             </Link>
-          </span> */}
+          </span>
         </span>
 
       </div>

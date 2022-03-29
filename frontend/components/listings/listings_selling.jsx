@@ -8,31 +8,19 @@ export default class ListingsSelling extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      orders: []
+      products: this.props.products
     }
   }
 
   componentDidMount() {
-    let orders = [];
-    this.props.fetchProducts()
-      .then(() => this.props.fetchOrdersByUser(this.props.currentUser.id)
-      .then((data) => {
-        // console.dir(data);
-        for (let order of Object.values(data.orders)) {
-          if (order.order_type === 'sell') {
-            orders.push(order);
-          }
-        }
-        this.setState({orders: orders});
-        // console.log(this.state);
-        // console.log(data.orders);
-      })
-    );
-    // this.props.fetchPortfolio(this.props.currentUser.id).then(() => Object.values(this.props.portfolio).forEach(item => this.props.fetchLastSale(item.product_id)));
+
+    this.props.fetchProducts().then(action => this.setState({ products: action.products }));
+    console.log(this.state.products);
   }
 
   render() {
-    let products = this.props.products;
+    let products = Object.values(this.state.products);
+    console.log(products);
     return (
       <div id="listings-selling">
         <span id="listings-sell-header">Selling</span>
@@ -41,22 +29,21 @@ export default class ListingsSelling extends React.Component {
             <tr className="listing-row">
               <th className="listing-col0"></th>
               <th className="listing-col1">Item</th>
-              <th className="listing-col2">Ask Price</th>
-              <th className="listing-col3">Highest Bid</th>
-              <th className="listing-col4">Lowest Ask</th>
+              <th className="listing-col2">Style</th>
+              <th className="listing-col3">Brand</th>
+              <th className="listing-col4">Price</th>
+              <th className="listing-col4">Release Date</th>
             </tr>
           </thead>
           <tbody>
-            {this.state.orders.map(order => isEmpty(order) ? null : <ListingItemContainer products={products} order={order} key={`order${order.id}`} />)}
+            {products.map(product => isEmpty(product) ? null : <ListingItemContainer product={product} key={`product${product.id}`} />)}
+
+            {/* {this.state.orders.map(order => isEmpty(order) ? null : <ListingItemContainer products={products} order={order} key={`order${order.id}`} />)} */}
           </tbody>
         </table>
 
-        <Link to="/profile/listings/new" className="new-listing">+ New Order</Link>
+        <Link to="/profile/listings/new" className="new-listing">+ New Item</Link>
       </div>
     )
   }
 }
-
-// <ul id="portfolio-list">
-//   {Object.values(portfolio).map(item => <PortfolioItemContainer item={item} key={`item${item.id}`} />)}
-// </ul>

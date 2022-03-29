@@ -20,13 +20,13 @@ export default class ListingsBuying extends React.Component {
   render() {
     return (
       <div id="listings-index-div">
-        <span id="listings-links">
+        {/* <span id="listings-links">
           <Link to="/profile/listings/buying" className={location.hash.split('/').includes('buying') ? "listings-selected" : ""}>Buying</Link>
           <Link to="/profile/listings/selling" className={location.hash.split('/').includes('selling') ? "listings-selected" : ""}>Selling</Link>
-        </span>
-          <ProtectedRoute exact path="/profile/listings/buying" component={ListingsBuyingContainer} />
-          <ProtectedRoute exact path="/profile/listings/selling" component={ListingsSellingContainer} />
-          <ProtectedRoute exact path="/profile/listings/created" component={ListingsCreated} />
+        </span> */}
+        {/* <ProtectedRoute exact path="/profile/listings/buying" component={ListingsBuyingContainer} /> */}
+        <ProtectedRoute exact path="/profile/listings/selling" component={ListingsSellingContainer} />
+        <ProtectedRoute exact path="/profile/listings/created" component={ListingsCreated} />
       </div>
     )
   }

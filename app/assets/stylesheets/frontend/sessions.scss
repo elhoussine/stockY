@@ -59,9 +59,9 @@
   cursor: default;
 }
 
-#form-header > a {
+#form-header>a {
   font-size: 12px;
-  font-family: 'proxima-nova', sans-serif;
+  //font-family: 'proxima-nova', sans-serif;
   cursor: pointer;
   padding-bottom: 5%;
   padding-top: 5%;
@@ -71,9 +71,9 @@
   display: flex;
 }
 
-#form-header > .selected {
+#form-header>.selected {
   font-size: 12px;
-  font-family: 'proxima-nova', sans-serif;
+  //font-family: 'proxima-nova', sans-serif;
   cursor: pointer;
   padding-bottom: 5%;
   padding-top: 5%;
@@ -85,11 +85,11 @@
 
 }
 
-#form-header > strong {
+#form-header>strong {
   display: flex;
   font-size: 14px;
   padding-top: 10px;
-  font-family: 'proxima-nova', sans-serif;
+  //font-family: 'proxima-nova', sans-serif;
   position: relative;
 }
 
@@ -117,7 +117,7 @@
   align-items: space-between;
   justify-content: space-between;
   font-size: 16px;
-  font-family: 'proxima-nova', sans-serif;
+  //font-family: 'proxima-nova', sans-serif;
   width: 100%;
   max-width: 300px;
   padding-bottom: 7.5px;
@@ -179,10 +179,9 @@
 }
 
 .error-list {
-  font-family: 'proxima-nova', sans-serif;
+  //font-family: 'proxima-nova', sans-serif;
   font-size: 12px;
   color: red;
   display: flex;
   flex-direction: column;
 }
-

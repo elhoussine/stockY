@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 
 export default ({ product }) => {
   const linkPath = `/products/${product.id}/view`
-  // console.dir(product);
   return (
     <li className="products-index-item">
       <Link to={linkPath}>
@@ -30,8 +29,3 @@ export default ({ product }) => {
     </li>
   );
 }
-
-//<li><p>{product.description}</p></li>
-//<li><strong>Retail Price: </strong>{product.retail_price}</li>
-//<li><strong>Release Date: </strong>{product.release_date}</li>
-//<li><span class="product-style-code">{product.style_code}</span></li>

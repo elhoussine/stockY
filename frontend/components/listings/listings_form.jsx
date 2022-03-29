@@ -2,8 +2,6 @@ import React from 'react';
 import isEmpty from '../../utils/obj-util';
 import ProductDropdown from './listings_form_product_dropdown';
 
-const sizes = [3.5, 4, 4.5, 5, 5.5, 6, 6.5, 7, 7.5, 8, 8.5, 9, 9.5, 10, 10.5, 11, 11.5, 12, 12.5, 13, 13.5, 14, 14.5, 15, 15.5, 16, 16.5, 17, 17.5, 18];
-
 export default class ListingsForm extends React.Component {
   constructor(props) {
     super(props);
@@ -18,9 +16,9 @@ export default class ListingsForm extends React.Component {
 
   componentDidMount() {
     if (isEmpty(this.props.products)) {
-      this.props.fetchProducts().then((pl) => this.setState({products: Object.values(pl.products)}));
+      this.props.fetchProducts().then((pl) => this.setState({ products: Object.values(pl.products) }));
     } else {
-      this.setState({products: Object.values(this.props.products)});
+      this.setState({ products: Object.values(this.props.products) });
     }
   }
 
@@ -44,13 +42,13 @@ export default class ListingsForm extends React.Component {
       window.location.href = window.location.origin + `/#/profile/listings/created`;
       // this.props.history.push('/profile/listings');
     }, failure => {
-      this.setState({errors: failure.errors});
+      this.setState({ errors: failure.errors });
       $(document.getElementById("listings-form-errors")).removeClass('hidden');
-    }); 
+    });
   }
 
   handleInput(type) {
-    return (e) => {this.setState({[type]: Math.round(e.target.value)})}
+    return (e) => { this.setState({ [type]: Math.round(e.target.value) }) }
   }
 
   renderErrors() {
@@ -71,38 +69,53 @@ export default class ListingsForm extends React.Component {
   }
 
   render() {
-    let products = this.state.products;
+    //let products = this.state.products;
     return (
       <div id="listings-form-div">
         <form id="listings-form" onSubmit={this.handleSubmit}>
-          <label id="listings-form-type">
-            <select defaultValue="" id="listings-form-type-dropdown">
-                <option value="" disabled>Type</option>
-                <option value="buy" key="sex-opt-M">Buying</option>
-                <option value="sell" key="sex-opt-F">Selling</option>
-              </select>
+          <h2>New Product</h2>
+          <br />
+          <label htmlFor="category">Category:
+            <select name="product[category]" id="">
+              <option value="1">Sneakers</option>
+              <option value="2">Apparel</option>
+              <option value="3">Electronics</option>
+              <option value="4">Trading Cards</option>
+              <option value="5">Collectibles</option>
+              <option value="6">Accessories</option>
+              <option value="7">NFTs</option>
+            </select>
           </label>
-          <label id="listings-prods">
-            <ProductDropdown products={products} />
+          <br />
+          <label htmlFor="">Name:
+            <input type="text" name="product[name]" id="" />
           </label>
-          <label id="listings-input-size">
-            <select defaultValue="" id="listings-form-size-sex-dropdown">
-                <option value="" disabled>Sex</option>
-                <option value="M" key="sex-opt-M">M</option>
-                <option value="F" key="sex-opt-F">F</option>
-                <option value="K" key="sex-opt-K">K</option>
-              </select>
-              <select defaultValue="" id="listings-form-size-num-dropdown">
-                <option value="" disabled>Size</option>
-                {sizes.map(size => (
-                  <option value={size} key={`size-opt-${size}`}>{size}</option>
-                ))}
-              </select>
+          <br />
+          <label htmlFor="">Style:
+            <input type="text" name="product[style]" id="" />
           </label>
-          <label>
-              <input type="number" min="0" step="1" id="listings-form-price" placeholder="Price" onChange={this.handleInput('price')} />
+          <br />
+          <label htmlFor="">Color:
+            <input type="text" name="product[color]" id="" />
           </label>
-          <input type="submit" value="Submit" id="listings-form-submit"/>
+          <br />
+          <label htmlFor="">Brand:
+            <input type="text" name="product[brand]" id="" />
+          </label>
+          <br />
+          <label htmlFor="">Image:
+            <input type="file" name="product[image]" id="" />
+          </label>
+          <br />
+          <label htmlFor="">Release Date:
+            <input type="date" name="product[release_date]" id="" />
+          </label>
+          <br />
+          <label htmlFor="">Description:
+            <textarea rows={7} cols={25} type="file" name="product[description]" id="" />
+          </label>
+          <br />
+          <input type="submit" value="Submit" id="listings-form-submit" />
         </form>
         <div id="listings-form-errors" className="hidden">
           {this.renderErrors()}

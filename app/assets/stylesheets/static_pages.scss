@@ -2,17 +2,10 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-// body {
-//     height: 100vh;
-//     width: 100vw;
-// }
 body {
     height: 100vh;
     width: 100vw;
-    background: #61817a;
-    background: rgb(95, 128, 120);
-    background: linear-gradient(90deg, rgb(101, 155, 143) 0%, rgb(89, 139, 131) 50%);
+    font-family: 'proxima-nova', sans-serif;
 }
 
 html {

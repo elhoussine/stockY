@@ -8,60 +8,15 @@ export default class ProductShow extends React.Component {
     let prodId = this.props.location.pathname.split('/')[2];
     this.state = {
       productId: prodId,
-      follows: false,
-      follow_id: -1,
-      hBid: -1,
-      hBidOrder: '',
-      lAsk: -1,
-      lAskOrder: '',
-      sales: null,
     }
-    this.handleFollow = this.handleFollow.bind(this);
+    this.handleBuy = this.handleBuy.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchProduct(this.state.productId);
-    this.props.fetchOrdersByProduct(this.state.productId).then(data => {
-      // console.log(data);
-      let hBid = -1;
-      let lAsk = -1;
-      for (let order of Object.values(data.orders)) {
-        if (hBid === -1 && order.order_type === "buy") {
-          hBid = order;
-        }
-        else if (order.price > hBid && order.order_type === "buy") {
-          hBid = order;
-        }
-        if (lAsk === -1 && order.order_type === "sell") {
-          lAsk = order;
-        }
-        else if (order.price < lAsk && order.order_type === "sell") {
-          lAsk = order;
-        }
-      }
-      this.setState({ hBid: hBid, lAsk: lAsk });
-      this.orders = data.orders;
-    });
-    this.props.fetchSales(this.state.productId).then((sales) => {
-      this.setState({ sales: sales.sales })
-    });
-    this.props.fetchLastSale(this.state.productId);
-    if (this.props.currentUser) this.props.fetchFollows(this.props.currentUser.id).then(data => {
-      // console.log('here');
-      // console.dir(data);
-      for (let follow of Object.values(data.follows)) {
-        // console.log(this.state.productId);
-        // console.log(follow.product_id);
-        if (parseInt(follow.product_id) === parseInt(this.state.productId)) {
-          // console.log('true')
-          this.setState({ follows: true, follow_id: follow.id });
-        }
-      }
-    })
-
   }
 
-  handleFollow(e) {
+  handleBuy(e) {
     if (!this.props.currentUser) {
       location.href = location.origin + `/#/login`;
       return false;
@@ -81,22 +36,17 @@ export default class ProductShow extends React.Component {
 
   render() {
 
-    // console.log(`id is ${this.props.currentUser.id}`); 
-    // console.dir(this.props.currentUser.id);
-
     let product = this.props.products[this.state.productId] || {};
-    let sales = this.state.sales ? Object.values(this.state.sales[this.state.productId]) : this.props.sales[this.state.productId] ? Object.values(this.props.sales[this.state.productId]) : [];
-    let orders = this.orders ? Object.values(this.orders) : isEmpty(this.props.orders) ? [{ price: 0, type: 'buy' }] : Object.values(this.props.orders);
-    let currUser = this.props.currentUser ? this.props.currentUser.id : -1;
 
     return (
       <div className="product-show">
         <div id="prod-show-buttons-outer">
           <div id="prod-show-buttons">
-            {/* <button id="prod-show-f" onClick={this.handleFollow}>+ {this.state.follows ? 'Following' : 'Follow'}</button> */}
+            <button id="prod-show-buy" onClick={this.handleBuy}>Buy</button>
           </div>
         </div>
-        <header>{product.model} "{product.name}"</header>
+        <header>{product.name}</header>
+        <br />
         <span id="prod-show-misc">
           <span id="prod-show-condition">
             Condition: <p style={{ color: 'green' }}>New</p>
@@ -105,18 +55,22 @@ export default class ProductShow extends React.Component {
           </span>
         </span>
 
-        {/* <ProductOrders product={product} sales={sales} orders={[this.state.hBid, this.state.lAsk]} updateOrder={this.props.updateOrder} createSale={this.props.createSale} addItem={this.props.addItem} currentUserId={currUser} /> */}
-
-
-
         <div id="prod-show-main">
           <div id="prod-show-img">
-            <img src={product.image} />
             <span id="prod-show-detail">
-              <span><p className="bold-this">Style</p> <p>{product.style}</p></span>
-              <span><p className="bold-this">Colorway</p> <p>{product.color ? product.color.split(' ').join('/') : 'black'}</p></span>
-              <span><p className="bold-this">Release Date</p> <p>{product.release_date}</p></span>
+              <div><p className="bold-this">Brand</p> <span>{product.brand}</span></div>
+              <br />
+              <div><p className="bold-this">Style</p> <span>{product.style}</span></div>
+              <br />
+              <div><p className="bold-this">Color</p> <span>{product.color ? product.color.split(' ').join('/') : 'black'}</span></div>
+              <br />
+              <div><p className="bold-this">Price</p> <span>${product.price}</span></div>
+              <br />
+              <div><p className="bold-this">Release Date</p> <span>{product.release_date}</span></div>
+              <br />
+              <div><p className="bold-this">Description</p> <span id='description'>{product.description}</span></div>
             </span>
+            <img src={product.image} />
           </div>
         </div>
       </div>

@@ -184,16 +184,18 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 350px;
-  //font-size: px;
+  width: 400px;
   font-family: 'proxima-nova', sans-serif;
   border: 1px solid #c3c3c3;
-  padding: 5px;
+  padding: 15px;
   letter-spacing: 1px;
 }
 
+#listings-form>span {
+  border-bottom: 1px solid black;
+}
+
 #listings-form>label>select {
-  float: right;
   font-size: 16px;
   font-family: 'proxima-nova', sans-serif;
   letter-spacing: 1px;
@@ -202,6 +204,7 @@
 
 #listings-form>label>* {
   float: right;
+  width: 50%;
 }
 
 #listings-form-type-dropdown {

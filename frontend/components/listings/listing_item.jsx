@@ -22,36 +22,18 @@ Array.prototype._formatDateFromString = function () {
 export default class ListingItem extends React.Component {
   constructor(props) {
     super(props);
-    // console.log('here');
-    // console.dir(this.props);
     this.handleDelete = this.handleDelete.bind(this);
-    // this.state = {
-    //   //order: (this.props.order ? this.props.order : {}),
-    //   product: (this.props.products[this.props.order.product_id] ? this.props.products[this.props.order.product_id] : {}),
-    // };
   }
 
-  componentDidMount() {
-    // let p_id = this.state.order.product_id;
-    // if (!this.props.products[p_id]) this.props.fetchProduct(p_id);
-    // this.props.fetchOrdersByProduct(p_id).then((data) => {
-    //   let newState = Object.assign({}, this.state);
-    //   // console.dir(data);
-    //   for (let order of Object.values(data.orders)) {
-    //     if (order.order_type === 'buy' && order.price > newState.hBid) newState.hBid = order.price;
-    //     else if (order.order_type === 'sell' && order.price < newState.lAsk) newState.lAsk = order.price;
-    //   }
-    //   this.setState(newState);
-    //   // console.dir(this.state);
-    // })
-  }
+  // componentDidMount() {
+  // }
 
   handleDelete(e) {
     // e.preventDefault();
-    let newOrder = Object.assign({}, this.state.order);
-    newOrder.active = 'false'
-    this.props.updateOrder(newOrder)
-    this.setState({ order: {}, product: {} });
+    let newProduct = Object.assign({}, this.state.product);
+    newProduct.active = 'false'
+    this.props.updateOrder(newProduct)
+    this.setState({ product: {} });
     location.reload();
   }
 

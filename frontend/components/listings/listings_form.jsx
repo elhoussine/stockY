@@ -75,6 +75,8 @@ export default class ListingsForm extends React.Component {
         <form id="listings-form" onSubmit={this.handleSubmit}>
           <h2>New Product</h2>
           <br />
+          <span> </span>
+          <br />
           <label htmlFor="category">Category:
             <select name="product[category]" id="">
               <option value="1">Sneakers</option>

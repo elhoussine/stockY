@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-
-const LOGO_PATH = "https://upload.wikimedia.org/wikipedia/commons/9/95/Stockx_logo.png"
+import logo from './logo.svg';
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -11,18 +10,12 @@ export default class NavBar extends React.Component {
       loggedIn: this.props.loggedIn
     }
     this.handleSearch = this.handleSearch.bind(this);
-    // this.handleHelp = this.handleHelp.bind(this);
-    // this.setState({loggedIn: this.props.loggedIn});
 
   }
 
   handleLogout() {
     this.props.logout();
   }
-
-  // componentDidUpdate() {
-  //   this.props.checkLogin();
-  // }
 
   componentDidUpdate() {
     if (this.state.loggedIn != this.props.loggedIn) this.setState({ loggedIn: this.props.loggedIn });
@@ -40,8 +33,8 @@ export default class NavBar extends React.Component {
     return (
       <div id="navbar-div">
         <span id="logo-span">
-          {/* <Link to="/"><img src={LOGO_PATH} /></Link> */}
-          <Link to="/">StockY</Link>
+          <Link to="/"><img src={logo} /></Link>
+          {/* <Link to="/">StockY</Link> */}
         </span>
         <span id="navbar-search-span">
           <span id="navbar-search-outer">
@@ -57,9 +50,6 @@ export default class NavBar extends React.Component {
             <Link to="/products">
               <li id="navbar-browse" className="navbar-dropdown">Products</li>
             </Link>
-            {/* <Link to="/profile/portfolio">
-              <li id="navbar-portfolio">Portfolio</li>
-            </Link> */}
             <Link to="/about">
               <li id="navbar-about" className="navbar-dropdown">About</li>
             </Link>

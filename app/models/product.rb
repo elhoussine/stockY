@@ -19,6 +19,8 @@
 class Product < ApplicationRecord
   validates :name, :color, :price, :brand, :image, :release_date, :seller_id, :category_id, presence: true
 
+  has_one_attached :photo
+
   belongs_to :seller,
     foreign_key: :seller_id,
     class_name: :User

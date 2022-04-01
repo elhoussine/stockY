@@ -13,7 +13,6 @@
 #listings-links>a {
   display: flex;
   color: black;
-  font-family: 'proxima-nova', sans-serif;
   padding: 10px;
   letter-spacing: 1px;
   padding-bottom: 20px;
@@ -31,7 +30,6 @@
   margin-left: 10px;
   display: flex;
   flex-direction: column;
-  font-family: 'proxima-nova', sans-serif;
   letter-spacing: 1px;
   font-size: 12px;
 }
@@ -41,7 +39,6 @@
   margin-left: 10px;
   display: flex;
   flex-direction: column;
-  font-family: 'proxima-nova', sans-serif;
   letter-spacing: 1px;
   font-size: 12px;
 }
@@ -160,7 +157,7 @@
   border: 1px solid black;
   border-radius: 25px;
   width: 100px;
-  height: 25px;
+  height: 30px;
   justify-content: center;
   align-items: center;
   color: black;
@@ -170,7 +167,7 @@
 
 .new-listing:hover {
   color: white;
-  background-color: black;
+  background-color: #449e92;
 }
 
 #listings-form-div {
@@ -185,26 +182,33 @@
   display: flex;
   flex-direction: column;
   width: 400px;
-  font-family: 'proxima-nova', sans-serif;
   border: 1px solid #c3c3c3;
   padding: 15px;
   letter-spacing: 1px;
 }
 
+#listings-form>h2 {
+  font-weight: bold;
+}
+
 #listings-form>span {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #449e92;
 }
 
 #listings-form>label>select {
   font-size: 16px;
-  font-family: 'proxima-nova', sans-serif;
   letter-spacing: 1px;
+  width: 208px;
+}
 
+#listings-form>label {
+  margin-top: 10px;
 }
 
 #listings-form>label>* {
   float: right;
   width: 50%;
+  height: 25px;
 }
 
 #listings-form-type-dropdown {
@@ -226,20 +230,35 @@
 #listings-form-price {
   width: 98%;
   font-size: 16px;
-  font-family: 'proxima-nova', sans-serif;
   letter-spacing: 1px;
 
 }
 
 #listings-form-submit {
-  width: 50%;
-  height: 40px;
-  background-color: #999999;
-  color: white;
-  font: bold 14px 'proxima-nova', sans-serif;
-  letter-spacing: 1px;
+  font-size: 15px;
   margin: auto;
   text-align: center;
+  cursor: pointer;
+  display: flex;
+  size: 200%;
+  background: white;
+  color: black;
+  border: 1px solid black;
+  border-radius: 20px;
+  border-color: black;
+  height: 32px;
+  width: 100px;
+  font-weight: 500;
+  text-shadow: none;
+  text-decoration: none;
+  box-shadow: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#listings-form-submit:hover {
+  color: white;
+  background-color: #449e92;
 }
 
 #listings-success {
@@ -248,7 +267,6 @@
   margin-left: 10px;
   width: 100%;
   height: 100%;
-  font: 14px 'proxima-nova', sans-serif;
   color: green;
   letter-spacing: 1px;
 }

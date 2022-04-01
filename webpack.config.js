@@ -9,15 +9,23 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.jsx?$/,
-      exclude: /(node_modules)/,
-      use: {
-        loader: 'babel-loader',
+        test: /\.(jpg|png|svg)$/i,
+        loader: 'file-loader',
         options: {
-          presets: ['@babel/env', '@babel/react']
+          outputPath: 'images',
         }
       },
-    }]
+      {
+        test: /\.jsx?$/,
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/env', '@babel/react']
+          }
+        },
+      }
+    ]
   },
   devtool: 'source-map', // creates a bundle.js.map - without this chrome would only tell you where your errors are in the bundle file
   resolve: {

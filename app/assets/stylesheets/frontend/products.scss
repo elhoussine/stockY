@@ -23,7 +23,7 @@
 }
 
 .products-index-item {
-  width: 23%;
+  width: 22%;
   height: 220px;
   border: 1px solid #449e92;
   box-sizing: border-box;
@@ -73,6 +73,7 @@
 
 #products-index-div a:hover .products-index-tag {
   background-color: #449e92;
+  color: white;
 }
 
 .products-index-item>a>span>img {

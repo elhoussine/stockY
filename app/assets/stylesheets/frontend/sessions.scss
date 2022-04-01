@@ -7,7 +7,6 @@
   width: 100%;
   min-height: 80vh;
   display: flex;
-  // justify-content: center;
   align-items: center;
   flex-direction: column;
   margin-top: 10vh;
@@ -21,22 +20,13 @@
   justify-content: center;
   border: 1px solid #CCCCCC;
   border-radius: 2.5px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding: 20px;
   width: 100%;
   max-width: 300px;
 }
 
-.formtype-register {
-  height: 300px;
-}
-
 .formtype-edit {
   height: 300px;
-}
-
-.formtype-login {
-  height: 200px;
 }
 
 #form-span:hover {
@@ -52,7 +42,6 @@
   max-width: 300px;
   align-items: center;
   box-sizing: border-box;
-  // border-bottom: 1px solid black;
 }
 
 #form-header:hover {
@@ -60,24 +49,22 @@
 }
 
 #form-header>a {
-  font-size: 12px;
-  //font-family: 'proxima-nova', sans-serif;
+  font-size: 14px;
   cursor: pointer;
   padding-bottom: 5%;
   padding-top: 5%;
-  border-bottom: 2px solid gray;
+  border-bottom: 1px solid gray;
   width: 50%;
   justify-content: center;
   display: flex;
 }
 
 #form-header>.selected {
-  font-size: 12px;
-  //font-family: 'proxima-nova', sans-serif;
+  font-size: 14px;
   cursor: pointer;
   padding-bottom: 5%;
   padding-top: 5%;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #449e92;
   width: 50%;
   display: flex;
   justify-content: center;
@@ -89,7 +76,6 @@
   display: flex;
   font-size: 14px;
   padding-top: 10px;
-  //font-family: 'proxima-nova', sans-serif;
   position: relative;
 }
 
@@ -109,18 +95,15 @@
 
 
 #session-form {
-  // width: 300px;
-  // height: 400px;
   display: flex;
   flex-direction: column;
   position: relative;
   align-items: space-between;
   justify-content: space-between;
   font-size: 16px;
-  //font-family: 'proxima-nova', sans-serif;
   width: 100%;
   max-width: 300px;
-  padding-bottom: 7.5px;
+  margin-top: 20px;
 }
 
 .form-label {
@@ -134,7 +117,7 @@
 }
 
 .form-input {
-  height: 20x;
+  height: 25x;
   margin: -1px 3px;
   border: 1px solid #BBBBBB;
   border-radius: 2.5px;
@@ -145,23 +128,26 @@
 
 #session-form-submit {
   margin-top: 12px;
+  margin-bottom: 10px;
 }
 
 .session-form-btn {
   size: 200%;
-  background: #999999;
-  color: white;
-  border: 1px solid #888888;
+  background: #90dad099;
+  border-radius: 2.5px;
+  color: #000;
+  border: 1px solid #000;
   height: 30px;
   width: 100%;
-  font: bold 12px 'proxima-nova', sans-serif;
   text-shadow: none;
-  // justify-content: center;
-  // align-items: center;
-  // text-align: center;
   box-shadow: none;
   margin-top: 2px;
   cursor: pointer;
+}
+
+.session-form-btn:hover {
+  background: #449e92;
+  color: white;
 }
 
 .session-form-btn:active {
@@ -179,7 +165,6 @@
 }
 
 .error-list {
-  //font-family: 'proxima-nova', sans-serif;
   font-size: 12px;
   color: red;
   display: flex;

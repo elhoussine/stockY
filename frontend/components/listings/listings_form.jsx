@@ -77,6 +77,7 @@ export default class ListingsForm extends React.Component {
           <br />
           <span> </span>
           <br />
+          <br />
           <label htmlFor="category">Category:
             <select name="product[category]" id="">
               <option value="1">Sneakers</option>
@@ -116,6 +117,9 @@ export default class ListingsForm extends React.Component {
           <label htmlFor="">Description:
             <textarea rows={7} cols={25} type="file" name="product[description]" id="" />
           </label>
+          <br />
+          <br />
+          <span> </span>
           <br />
           <input type="submit" value="Submit" id="listings-form-submit" />
         </form>

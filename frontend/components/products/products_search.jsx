@@ -1,7 +1,5 @@
 import React from 'react';
 import ProductsIndexItem from './products_index_item'
-import isEmpty from '../../utils/obj-util';
-import { Link, withRouter } from 'react-router-dom';
 
 export default class ProductsSearch extends React.Component {
   constructor(props) {
@@ -16,11 +14,11 @@ export default class ProductsSearch extends React.Component {
   componentDidMount() {
     let memProds = Object.values(this.props.products);
     if (memProds.length) {
-      this.setState({products: memProds})
+      this.setState({ products: memProds })
       this.filterProducts();
     } else {
       this.props.fetchProducts()
-        .then(action => this.setState({products: action.products}))
+        .then(action => this.setState({ products: action.products }))
         .then(() => this.filterProducts());
     }
 
@@ -72,7 +70,7 @@ export default class ProductsSearch extends React.Component {
           for (let term of terms) {
             if (colorway.includes(term)) {
               if (!filtered.includes(prod)) filtered.push(prod);
-             
+
               break;
             }
           }
@@ -85,11 +83,11 @@ export default class ProductsSearch extends React.Component {
             }
           }
         }
-        
+
       }
     }
-    
-    this.setState({filtered: filtered});
+
+    this.setState({ filtered: filtered });
 
   }
 

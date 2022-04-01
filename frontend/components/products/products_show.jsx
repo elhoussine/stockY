@@ -49,14 +49,15 @@ export default class ProductShow extends React.Component {
         <br />
         <span id="prod-show-misc">
           <span id="prod-show-condition">
-            Condition: <p style={{ color: 'green' }}>New</p>
+            Condition: <p>New</p>
           </span> | <span id="prod-show-authenticity">
-            <p style={{ color: 'green' }}>100% Authentic</p>
+            <p>100% Authentic</p>
           </span>
         </span>
 
         <div id="prod-show-main">
           <div id="prod-show-img">
+            <img src={product.image} />
             <span id="prod-show-detail">
               <div><p className="bold-this">Brand</p> <span>{product.brand}</span></div>
               <br />
@@ -70,7 +71,6 @@ export default class ProductShow extends React.Component {
               <br />
               <div><p className="bold-this">Description</p> <span id='description'>{product.description}</span></div>
             </span>
-            <img src={product.image} />
           </div>
         </div>
       </div>

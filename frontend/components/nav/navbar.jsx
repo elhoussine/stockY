@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
-import logo from './logo.svg';
+//import logo from './logo.svg';
 
 export default class NavBar extends React.Component {
   constructor(props) {
@@ -33,7 +33,7 @@ export default class NavBar extends React.Component {
     return (
       <div id="navbar-div">
         <span id="logo-span">
-          <Link to="/"><img src={logo} /></Link>
+          <Link to="/"><img src={window.logo} /></Link>
           {/* <Link to="/">StockY</Link> */}
         </span>
         <span id="navbar-search-span">

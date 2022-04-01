@@ -8,7 +8,7 @@ export default class ListingsForm extends React.Component {
     this.state = {
       user_id: this.props.currentUser.id,
       price: "",
-      errors: this.props.errors,
+      errors: this.props.errors || [],
       products: []
     }
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -29,14 +29,7 @@ export default class ListingsForm extends React.Component {
     let sn = document.getElementById("listings-form-size-num-dropdown").value;
     let ot = document.getElementById("listings-form-type-dropdown").value;
     const item = Object.assign({}, this.state, {
-      product_id: itemData[0],
-      order_type: ot,
-      size: sn,
-      sex: ss,
-      asker_id: this.state.user_id,
-      active: 'true',
-      sold: 'false',
-      shipped: 'false'
+      product_id: itemData[0]
     });
     this.props.createOrder(item).then(success => {
       window.location.href = window.location.origin + `/#/profile/listings/created`;

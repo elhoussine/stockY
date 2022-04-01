@@ -24,13 +24,10 @@ export default class Splash extends React.Component {
             Users are able to trade a variety of limited edition sneakers and basketball shoes.
           </li>
           <li>
-            Items may be added to a user's portfolio, allowing users to track price or value.
-          </li>
-          <li>
             Users are also able to search for items using a variety of factors such as name, brand, model, and colors.
           </li>
           <li>
-            You will then be able to view your portfolio, and any listings / orders you have placed in your profile.
+            You will then be able to view your orders, and any listings you have placed in your profile.
           </li>
           <li>
             You may then browse for a product or search for one by name, model, brand, color, and more.
@@ -39,7 +36,7 @@ export default class Splash extends React.Component {
             After clicking on a product, you will then be able to see the item details or make a transaction.
           </li>
           <li>
-            If there are any listing products available, you will be able to buy the item. It will be automatically added to your portfolio.
+            If there are any listing products available, you will be able to buy the item. It will be automatically added to your orders.
           </li>
           <li>
             If you list any products for sell, you will be able to sell the item.

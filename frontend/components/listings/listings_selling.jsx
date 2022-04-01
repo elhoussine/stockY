@@ -37,8 +37,6 @@ export default class ListingsSelling extends React.Component {
           </thead>
           <tbody>
             {products.map(product => isEmpty(product) ? null : <ListingItemContainer product={product} key={`product${product.id}`} />)}
-
-            {/* {this.state.orders.map(order => isEmpty(order) ? null : <ListingItemContainer products={products} order={order} key={`order${order.id}`} />)} */}
           </tbody>
         </table>
 

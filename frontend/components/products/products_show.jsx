@@ -1,6 +1,5 @@
 import React from 'react';
 import isEmpty from '../../utils/obj-util';
-import ProductOrders from './show_components/orders-sales';
 
 export default class ProductShow extends React.Component {
   constructor(props) {

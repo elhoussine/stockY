@@ -7,15 +7,11 @@ export default class Profile extends React.Component {
   }
 
   render() {
-    // console.dir(this.props);
-    // console.log(this.props.match.path);
-
-
-    // console.log(selected);
     return (
       <div id="profile-main-div">
         <p id="profile-main-title">PROFILE</p>
         <p id="welcome-msg">Hi, {this.props.currentUser.name}!</p>
+        <p id="welcome-msg">Email : {this.props.currentUser.email}</p>
         <br />
         <button id="temp-logout-btn" onClick={this.props.logout}>Log Out</button>
       </div>

@@ -76,7 +76,6 @@ export default class SessionForm extends React.Component {
     const user = Object.assign({}, { email: 'demo@email.com', password: 'demopassword' })
     this.props.process(user);
     window.location.replace(this.goto)
-    // this.props.history.push('/profile');
   }
 
   render() {

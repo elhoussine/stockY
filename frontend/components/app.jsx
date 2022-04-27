@@ -8,6 +8,7 @@ import ProductsSearchContainer from './products/products_search_container';
 import NavBarContainer from './nav/navbar_container';
 import ProductShowContainer from './products/products_show_container';
 import About from './about/about';
+import Footer from './footer/footer';
 import { Route, Switch } from 'react-router-dom';
 import { AuthRoute, ProtectedRoute } from '../utils/route-util';
 
@@ -28,7 +29,9 @@ const App = () => (
       <AuthRoute exact path="/login" component={LoginContainer} />
       <AuthRoute exact path="/register" component={RegistrationContainer} />
     </div>
-    <div id="footer-div"></div>
+
+    <Footer />
+    
   </div>
 );
 

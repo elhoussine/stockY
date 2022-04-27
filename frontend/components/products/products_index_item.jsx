@@ -11,19 +11,19 @@ export default ({ product }) => {
           <img src={product.image} />
         </span>
         <span className="products-index-tag">
-          <h3>
+          <p>
             <ul>
               <li>
                 {product.brand}
               </li>
               <li>
-                "{product.name}"
+                {product.name}
               </li>
-              <li className="prod-style-code">
-                {product.style}
+              <li className="product-price">
+                ${product.price}
               </li>
             </ul>
-          </h3>
+          </p>
         </span>
       </Link>
     </li>

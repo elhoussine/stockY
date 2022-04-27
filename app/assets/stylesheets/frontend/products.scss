@@ -1,13 +1,13 @@
 #products-index-div {
-  margin: auto;
-  margin-top: 50px;
-  width: 70%;
-  height: min(calc(100vh - 90px), 80vh);
+  //margin: auto;
+  margin: 2% auto;
+  width: 90%;
+  //height: min(calc(100vh - 90px), 80vh);
   display: flex;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 1px;
-  flex-direction: row;
-  justify-content: center;
+  // flex-direction: row;
+  // justify-content: center;
 }
 
 #products-index-div a {
@@ -20,63 +20,71 @@
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
+  margin: auto;
 }
 
 .products-index-item {
-  width: 22%;
-  height: 220px;
-  border: 1px solid #449e92;
+  width: 24%;
+  border: 1px solid #b7b7b75f;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 13px;
+  margin: 0 1% 2% 0;
 }
 
-#products-index-div a:hover .products-index-item {
+// #products-index-div .products-index-item {
+//   border: 1px solid #449e92;
+// }
+
+.products-index-item:hover {
   border: 1px solid #449e92;
+  cursor: pointer;
 }
 
 .products-index-item>a {
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
+  margin-top: auto;
 }
 
 .products-index-img {
-  height: 158px;
   width: 100%;
+  padding: 5% 0;
   box-sizing: border-box;
-  border: 1px solid #fafafa;
+  //border: 1px solid #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#products-index-div a:hover .products-index-img {
-  border: 1px solid #449e92;
-}
+// #products-index-div a:hover .products-index-img {
+//   border: 1px solid #449e92;
+// }
 
 .products-index-tag {
   display: flex;
   flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  height: 60px;
-  box-sizing: border-box;
   background-color: #fafafa;
+  padding: 3%;
+  //color: #449e92;
 }
 
-.products-index-tag>h3 {
-  margin-left: 15px;
-  margin-top: 7.5px;
+.products-index-tag ul li {
+  line-height: 120%;
 }
 
-#products-index-div a:hover .products-index-tag {
+.product-price {
+  //color: #7b7b7b;
+  font-weight: bold;
+}
+
+
+.products-index-item:hover .products-index-tag {
   background-color: #449e92;
   color: white;
 }
 
 .products-index-item>a>span>img {
-  width: 180px;
+  width: 70%;
   box-sizing: border-box;
 }

@@ -18,7 +18,7 @@ html {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    //height: 100vh;
 }
 
 #app-div {
@@ -48,60 +48,118 @@ input {
     display: none;
 }
 
-#splash-div {
+.splash {
     width: 100%;
-    height: 100vh;
-    background-color: black;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+    //height: 100vh;
+    //justify-content: center;
+    //align-items: center;
+    //display: flex;
+    //flex-direction: column;
 }
 
-#splash-div>img {
-    width: 100%;
-    position: absolute;
-    z-index: 0;
-}
-
-#splash-div>ul {
-    position: fixed;
-    z-index: 2;
-    color: black;
-    width: 75%;
-    height: 50%;
-    font: 16px 'proxima-nova', sans-serif;
-    letter-spacing: 1px;
-    text-shadow: 1px 1px #777777;
-    // margin-left: 15px;
-    // margin-right: 15px;
-    // margin-top: 10px;
-    // margin-bottom: 10px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-#splash-div>ul>li:first-child {
-    font-size: 24px;
-    text-align: center;
-    // margin-top: 10px;
-    // margin-bottom: 15px;
-}
-
-#splash-div>ul>li {
-    // margin-top: 5px;
-    // margin-bottom: 5px;
-}
-
-
-#splash-div>div {
-    background-color: white;
+.splash-header{
+    margin: 3% auto;
+    background-color: #b7b7b75f;
+    border-radius: 10px;
     width: 80%;
-    height: 50%;
-    z-index: 0;
-    position: fixed;
-    opacity: .75;
-    border-radius: 25px;
+    padding: 3% 5%;
+    //overflow-wrap: break-word;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+}
+
+.splash-header .splash-text-div {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.splash-text-div .splash-title {
+    width: 115%;
+    font-family: Chalkduster, fantasy;
+    font-weight: 800;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    line-height: 80px;
+}
+
+.splash-text-div .splash-btn {
+    width: 100%;
+    margin-top: 10%;
+}
+
+.splash-text-div .splash-btn .shop-now-btn {
+    background-color: #449e92;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 2.5%;
+    width: 27%;
+    font-size: 15px;
+    font-weight: 550;
+    text-shadow: none;
+    text-decoration: none;
+    box-shadow: none;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+.splash-header .splash-image-div {
+    width: 45%;
+}
+
+.splash-header .splash-image-div img {
+    width: 100%;
+}
+
+.popular-brands {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto;
+}
+
+.popular-brands-title {
+    font-size: 28px;
+    text-align: left;
+}
+
+.popular-brands-items {
+    width: 100%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+}
+.popular-brands-item {
+    display: flex;
+    width: 10%;
+    padding: 3%;
+    background-color: #b7b7b75f;
+    border-radius: 5%;
+    margin-right: 0.8%;
+}
+
+.popular-brands-items .last-item{
+    margin-right: -0.8%;
+}
+
+.popular-brands-item img {
+    width: 100%;
+}
+
+.popular-products {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 3% auto;
+}
+
+.popular-products-title {
+    font-size: 28px;
+    text-align: left;
+    padding-left: 5%;
 }

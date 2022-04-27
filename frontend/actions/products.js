@@ -25,5 +25,8 @@ export const fetchProducts = () => dispatch =>
 export const fetchProduct = id => dispatch =>
   ProductsUtil.fetchProduct(id).then(product => dispatch(receiveProduct(product)));
 
+export const createProduct = product => dispatch =>
+  ProductsUtil.createProduct(product).then(p => dispatch(receiveProduct(p)), errors => dispatch(receiveProductErrors(errors.responseJSON)));
+
 export const updateProduct = product => dispatch =>
   ProductsUtil.updateProduct(product).then(p => dispatch(receiveProduct(p)), errors => dispatch(receiveProductErrors(errors.responseJSON)));

@@ -16,21 +16,12 @@ export default class ProductShow extends React.Component {
   }
 
   handleBuy(e) {
+    e.preventDefault();
     if (!this.props.currentUser) {
       location.href = location.origin + `/#/login`;
       return false;
     }
-    e.preventDefault();
-    if (this.state.follows) {
-      this.props.deleteFollow(this.state.follow_id);
-      this.setState({ follows: false, follow_id: -1 });
-    }
-    else if (!this.state.follows) {
-      this.props.createFollow({ user_id: this.props.currentUser.id, product_id: this.state.productId }).then(data => {
-        // console.log(data);
-        this.setState({ follows: true, follow_id: data.follow.id });
-      })
-    }
+    
   }
 
   render() {
@@ -64,7 +55,7 @@ export default class ProductShow extends React.Component {
               <br />
               <div><p className="bold-this">Color</p> <span>{product.color ? product.color.split(' ').join('/') : 'black'}</span></div>
               <br />
-              <div><p className="bold-this">Price</p> <span>${product.price}</span></div>
+              <div><p className="bold-this">Price</p> <span className="bold-this">${product.price}</span></div>
               <br />
               <div><p className="bold-this">Release Date</p> <span>{product.release_date}</span></div>
               <br />

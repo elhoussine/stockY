@@ -4,7 +4,7 @@ import {
 } from 'react-redux';
 import ListingsForm from './listings_form';
 import {
-  fetchProducts
+  fetchProducts, createProduct
 } from '../../actions/products';
 import {
   resetErrors
@@ -14,6 +14,8 @@ import {
 const mapStateToProps = (state) => {
   let isLoggedIn = (state.session.currentUserId ? true : false);
   return ({
+    product : {category_id: '', name: '', style: '', color: '', brand: '', price: 0.0, release_date: '', description: '', photoUrl: null},
+    formType: 'Create Product',
     currentUser: (isLoggedIn ? state.entities.currentUser : null),
     products: state.entities.products
   });
@@ -21,6 +23,7 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => ({
   fetchProducts: () => dispatch(fetchProducts()),
+  createProduct: (product) => dispatch(createProduct(product)),
   resetErrors: () => dispatch(resetErrors())
 });
 

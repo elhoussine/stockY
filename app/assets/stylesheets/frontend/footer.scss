@@ -7,6 +7,7 @@
    justify-content: center;
    margin: 0 3% 0 0;
    box-shadow: 0 -5px 15px #7777777f;
+   z-index: 1;
 
 }
 
@@ -17,22 +18,26 @@
    justify-content: space-between;
 }
 
+.footer-content ul {
+   display: flex;
+   flex-direction: column;
+}
+
 .footer-content span {
    font-weight: bold;
    font-size: .9rem;
    cursor: pointer;
+   margin: 0 0 8% 0;
 }
 
-.footer-content li:nth-child(2) {
-   margin-top: .5rem;
-   margin-right: 1.5rem;
-}
+// .footer-content li:nth-child(2) {
+//    margin-top: 10%;
+// }
 
 .footer-content li {
    font-size: .9rem;
    min-height: 30px;
    cursor: pointer;
-   margin-right: 1.5rem;
 }
 
 .footer-line{

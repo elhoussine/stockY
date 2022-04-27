@@ -43,7 +43,6 @@ function Footer(props) {
                <li>Apps</li>
                <li>Blog</li>
                <li>Help Center</li>
-               <li>Events</li>
             </ul>
 
             <ul>

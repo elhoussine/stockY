@@ -12,18 +12,23 @@ export const fetchProduct = (id) => (
   })
 );
 
-export const createProduct = (product) => (
-  $.ajax({
+export const createProduct = (product) => {
+  console.log(product);
+  return $.ajax({
     method: 'POST',
     url: '/api/products',
-    data: {product}
+    data: product,
+    contentType: false,
+    processData: false
   })
-);
+};
 
 export const updateProduct = (product) => (
   $.ajax({
     method: 'PATCH',
     url: `/api/products/${product.id}`,
-    data: { product }
+    data: product,
+    contentType: false,
+    processData: false
   })
 );

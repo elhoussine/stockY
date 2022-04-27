@@ -24,6 +24,9 @@ export default class ListingsSelling extends React.Component {
     return (
       <div id="listings-selling">
         <span id="listings-sell-header">Selling</span>
+
+        <Link to="/profile/listings/new" className="new-listing">+ New Item</Link>
+        
         <table id="listings-sell-table">
           <thead id="listings-sell-table-heading">
             <tr className="listing-row">
@@ -39,8 +42,6 @@ export default class ListingsSelling extends React.Component {
             {products.map(product => isEmpty(product) ? null : <ListingItemContainer product={product} key={`product${product.id}`} />)}
           </tbody>
         </table>
-
-        <Link to="/profile/listings/new" className="new-listing">+ New Item</Link>
       </div>
     )
   }

@@ -30,6 +30,7 @@ export default class NavBar extends React.Component {
 
   render() {
     // console.log(this.state.loggedIn);
+    const { currentUser, toggleCartModal, cartItemQuantity } = this.props;
     return (
       <div id="navbar-div">
         <span id="logo-span">
@@ -64,6 +65,15 @@ export default class NavBar extends React.Component {
               <button id="navbar-sell-btn">Sell</button>
             </Link>
           </span>
+
+          <Link
+            to="/cart"
+            className="header-link cart-count"
+            onClick={() => toggleCartModal()}
+            key={cartItemQuantity}
+          >
+            <img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/30/000000/external-shopping-cart-interface-kiranshastry-solid-kiranshastry.png" />
+          </Link>
         </span>
 
       </div>

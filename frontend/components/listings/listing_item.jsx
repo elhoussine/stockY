@@ -22,28 +22,26 @@ Array.prototype._formatDateFromString = function () {
 export default class ListingItem extends React.Component {
   constructor(props) {
     super(props);
-    this.handleDelete = this.handleDelete.bind(this);
+    this.removeProduct = this.removeProduct.bind(this);
   }
 
   // componentDidMount() {
   // }
 
-  handleDelete(e) {
-    // e.preventDefault();
-    let newProduct = Object.assign({}, this.state.product);
-    newProduct.active = 'false'
-    this.props.updateOrder(newProduct)
-    this.setState({ product: {} });
+  removeProduct (e, productId){
+    e.preventDefault();
+    this.props.deleteProduct(productId);
     location.reload();
   }
 
   render() {
     let product = this.props.product;
     if (isEmpty(product)) return (null);
+    //const {deleteProduct} = this.props;
     return (
       <tr className="listing-row listing-item">
         <td className="listing-col0">
-          <Link to="#"><img className="delete-listing-item-btn" src="https://img.icons8.com/office/30/000000/delete--v1.png" onClick={this.handleDelete} height="25px" /></Link>
+          <Link to="#"><img className="delete-listing-item-btn" src="https://img.icons8.com/office/30/000000/delete--v1.png" onClick={(e) => this.removeProduct(e, product.id)} height="25px" /></Link>
         </td>
         <td className="listing-col1 listing-item-info">
           <span className="listing-item-pic">

@@ -21,6 +21,12 @@ export default class ListingsForm extends React.Component {
     }
   }
 
+  updateSelect(option){
+      return (e) => {
+        this.setState({ [option]: e.target.value });
+      }
+  }
+
 
   handleFile(e) {
     this.setState({ photoUrl: e.currentTarget.files[0] })
@@ -29,7 +35,7 @@ export default class ListingsForm extends React.Component {
   handleSubmit(e) {
     e.preventDefault();
     const data = new FormData();
-    data.append('product[id]', this.state.id);
+    //data.append('product[id]', this.props.productId);
     data.append('product[category_id]', this.state.category_id);
     data.append('product[name]', this.state.name);
     data.append('product[style]', this.state.style);
@@ -40,13 +46,14 @@ export default class ListingsForm extends React.Component {
     data.append('product[description]', this.state.description);
     data.append('product[photo]', this.state.photoUrl);
     data.append('product[seller_id]', this.props.currentUser.id);
+    data.append('product[image]', 'true');
 
     this.props.createProduct(data).then(response => {
       if (this.props.formType === 'Create Product') {
-        this.props.history.push(`/`);
+        this.props.history.push(`/profile/listings/selling`);
       }
       else {
-        this.props.history.push(`/listings/${this.state.id}`)
+        this.props.history.push(`/profile/listings/selling/${this.state.id}`)
       };
     }, failure => {
       this.setState({ errors: failure.errors });
@@ -99,7 +106,7 @@ export default class ListingsForm extends React.Component {
           <br />
           <br />
           <label htmlFor="category">Category
-            <select name="product[category_id]" id="" >
+            <select name="product[category_id]" value={this.state.category_id} onChange={this.updateSelect('category_id')}>
               <option value="1">Sneakers</option>
               <option value="2">Apparel</option>
               <option value="3">Electronics</option>

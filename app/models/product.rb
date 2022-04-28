@@ -17,9 +17,17 @@
 #  updated_at   :datetime         not null
 #
 class Product < ApplicationRecord
-  validates :name, :color, :price, :brand, :image, :release_date, :seller_id, :category_id, presence: true
+  validates :name, :color, :price, :brand, :release_date, :seller_id, :category_id, presence: true
+
+  validate :ensure_product_photo
 
   has_one_attached :photo
+
+  def ensure_product_photo
+    unless self.photo.attached?
+      errors[:photo] << "must be attached"
+    end
+  end
 
   belongs_to :seller,
     foreign_key: :seller_id,

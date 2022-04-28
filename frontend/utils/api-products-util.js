@@ -32,3 +32,10 @@ export const updateProduct = (product) => (
     processData: false
   })
 );
+
+export const deleteProduct = (id) => (
+  $.ajax({
+    method: 'DELETE',
+    url: `/api/products/${id}`
+  })
+);

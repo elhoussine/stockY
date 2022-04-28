@@ -60,21 +60,21 @@ function Footer(props) {
             <div>
                <span>UNITED STATES &nbsp;|&nbsp; $ USD</span>
             </div>
-            <div class="social-icons">
+            <div className="social-icons">
                <a href="https://github.com/elhoussine" target="_blank" title="Github">
-                  <i class="fa fa-github-square" aria-hidden="true"></i>
+                  <i className="fa fa-github-square" aria-hidden="true"></i>
                </a>
                <a href="https://www.linkedin.com/in/elhoussine-elouardy/" target="_blank" title="Linkedin">
-                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  <i className="fa fa-linkedin-square" aria-hidden="true"></i>
                </a>
                <a href="https://angel.co/u/elhoussine-elouardy" target="_blank" title="Angellist">
-                  <i class="fa fa-angellist fa-1g" aria-hidden="true"></i>
+                  <i className="fa fa-angellist fa-1g" aria-hidden="true"></i>
                </a>
                <a href="https://twitter.com/hou551ne" target="_blank" title="Twitter">
-                  <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                  <i className="fa fa-twitter-square" aria-hidden="true"></i>
                </a>
                <a href="mailto:elouardy.elhoussine@gmail.com" title="Google">
-                  <i class="fa fa-google-plus-square" aria-hidden="true"></i>
+                  <i className="fa fa-google-plus-square" aria-hidden="true"></i>
                </a>
             </div>
             <div>

@@ -23,7 +23,7 @@ export default class ProfileNav extends React.Component {
         <span id="profile-nav-name">{this.props.currentUser ? this.props.currentUser.name : "Guest"}</span>
         <Link to="/profile"><li onClick={this.changeBold} id="p-navbar-profile" className="profile-nav-item"><span className="nav-icon"><img src="https://img.icons8.com/office/30/000000/user.png" /></span><span className="nav-label">Profile</span></li></Link>
         <Link to="/profile/listings/selling"><li onClick={this.changeBold} id="p-navbar-listings" className="profile-nav-item"><span className="nav-icon"><img src="https://img.icons8.com/office/30/000000/cash-in-hand.png" /></span><span className="nav-label">Listings</span></li></Link>
-        <Link to="/profile/listings"><li onClick={this.changeBold} id="p-navbar-orders" className="profile-nav-item"><span className="nav-icon"><img src="https://img.icons8.com/office/30/000000/shopping-cart-loaded--v1.png" /></span><span className="nav-label">Orders</span></li></Link>
+        <Link to="/profile/listings"><li onClick={this.changeBold} id="p-navbar-orders" className="profile-nav-item"><span className="nav-icon"><img src="https://img.icons8.com/office/30/000000/shopping-cart-loaded--v1.png" /></span><span className="nav-label">Cart</span></li></Link>
         <Link to="/profile/edit"><li onClick={this.changeBold} id="p-navbar-settings" className="profile-nav-item"><span className="nav-icon"><img src="https://img.icons8.com/office/30/000000/edit-user-male--v1.png" /></span>Edit Profile</li></Link>
       </ul>
     );

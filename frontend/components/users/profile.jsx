@@ -4,8 +4,10 @@ import { ProtectedRoute } from '../../utils/route-util';
 import ProfileNavContainer from './profile_nav_container';
 import ProfileMainContainer from './profile_main_container';
 import EditProfileContainer from './edit_profile_container';
-import ListingsIndexContainer from '../listings/listings_index_container';
 import ListingsFormContainer from '../listings/listings_form_container';
+import ListingsSellingContainer from '../listings/listings_selling_container';
+
+import CartIndexContainer from '../cart/cart_container';
 
 export default class Profile extends React.Component {
   constructor(props) {
@@ -22,8 +24,9 @@ export default class Profile extends React.Component {
         <div id="profile-main">
           <Route exact path="/profile" component={ProfileMainContainer} />
           <ProtectedRoute exact path="/profile/edit" component={EditProfileContainer} />
-          <ProtectedRoute path="/profile/listings" component={ListingsIndexContainer} />
+          <ProtectedRoute path="/profile/cart" component={CartIndexContainer} />
           <ProtectedRoute exact path="/profile/listings/new" component={ListingsFormContainer} />
+          <ProtectedRoute exact path="/profile/listings" component={ListingsSellingContainer} />
         </div>
       </div>
     );

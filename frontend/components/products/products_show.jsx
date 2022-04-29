@@ -30,12 +30,10 @@ export default class ProductShow extends React.Component {
 
     return (
       <div className="product-show">
-        <div id="prod-show-buttons-outer">
-          <div id="prod-show-buttons">
-            <button id="prod-show-buy" onClick={this.handleBuy}>Buy</button>
-          </div>
+        <div id="prod-show-buttons">
+          <header className='product-show-header'>{product.name}</header>
+          <button id="prod-show-buy" onClick={this.handleBuy}>Buy</button>
         </div>
-        <header>{product.name}</header>
         <br />
         <span id="prod-show-misc">
           <span id="prod-show-condition">
@@ -49,6 +47,8 @@ export default class ProductShow extends React.Component {
           <div id="prod-show-img">
             <img src={product.image} />
             <span id="prod-show-detail">
+              <div><p className="bold-this">Category</p> <span>{product.category}</span></div>
+              <br />
               <div><p className="bold-this">Brand</p> <span>{product.brand}</span></div>
               <br />
               <div><p className="bold-this">Style</p> <span>{product.style}</span></div>

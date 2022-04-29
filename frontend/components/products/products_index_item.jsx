@@ -14,7 +14,7 @@ export default ({ product }) => {
           <p>
             <ul>
               <li>
-                {product.brand}
+                {product.brand} | {product.category}
               </li>
               <li>
                 {product.name}

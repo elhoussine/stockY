@@ -50,10 +50,10 @@ export default class ListingsForm extends React.Component {
 
     this.props.createProduct(data).then(response => {
       if (this.props.formType === 'Create Product') {
-        this.props.history.push(`/profile/listings/selling`);
+        this.props.history.push(`/profile/listings`);
       }
       else {
-        this.props.history.push(`/profile/listings/selling/${this.state.id}`)
+        this.props.history.push(`/profile/listings/${this.state.id}`)
       };
     }, failure => {
       this.setState({ errors: failure.errors });

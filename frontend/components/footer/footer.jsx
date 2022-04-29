@@ -78,7 +78,7 @@ function Footer(props) {
                </a>
             </div>
             <div>
-               <p>Inspired by StockX, <br /> proudly built by Elhoussine</p>
+               <p>Inspired by StockX<br />proudly built by Elhoussine</p>
             </div>
          </div>
       </div>

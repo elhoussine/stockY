@@ -58,22 +58,22 @@ export default class NavBar extends React.Component {
               <Link to="/profile">
                 <li id="navbar-my-account" className="navbar-dropdown">My Account</li>
               </Link> : <span id="navbar-auth"><Link to="/login"><li id="navbar-login">Login</li></Link>
-                <Link to="/register"><li id="navbar-register">Register</li></Link></span>}
+              <Link to="/register"><li id="navbar-register">Register</li></Link></span>}
           </ul>
+
+          <Link
+            to="/profile/cart"
+            className="cart-icon"
+            key={cartItemQuantity}
+          >
+            <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-shopping-cart-interface-kiranshastry-lineal-kiranshastry.png" />
+          </Link>
+
           <span id="navbar-els2">
             <Link to="/profile/listings/new">
               <button id="navbar-sell-btn">Sell</button>
             </Link>
           </span>
-
-          <Link
-            to="/cart"
-            className="header-link cart-count"
-            onClick={() => toggleCartModal()}
-            key={cartItemQuantity}
-          >
-            <img src="https://img.icons8.com/external-kiranshastry-solid-kiranshastry/30/000000/external-shopping-cart-interface-kiranshastry-solid-kiranshastry.png" />
-          </Link>
         </span>
 
       </div>

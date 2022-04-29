@@ -1,29 +1,19 @@
 .product-show {
-  margin-top: 40px;
-  margin-left: 5vw;
-  width: 100%;
+  width: 90%;
+  margin: 5% auto;
+  display: flex;
+  flex-direction: column;
 }
 
-.product-show>header {
+.product-show-header {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-#prod-show-buttons-outer {
+#prod-show-buttons {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  position: relative;
-  left: 84.5%;
-}
-
-#prod-show-buttons {
-  width: 200px;
-  height: 25px;
-  position: relative;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 #prod-show-buttons>button {
@@ -37,6 +27,7 @@
   width: 60px;
   height: 32px;
   background-color: white;
+  margin-left: auto;
 }
 
 #prod-show-buttons>button:hover {

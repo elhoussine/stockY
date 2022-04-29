@@ -52,10 +52,11 @@ export default class ListingItem extends React.Component {
           </Link>
         </td>
 
+        <td className="listing-col2"><p>{product.category}</p></td>
+        <td className="listing-col2"><p>{product.brand}</p></td>
         <td className="listing-col2"><p>{product.style}</p></td>
-        <td className="listing-col3"><p>{product.brand}</p></td>
-        <td className="listing-col4"><p>${product.price}</p></td>
-        <td className="listing-col4"><p>{product.release_date}</p></td>
+        <td className="listing-col2"><p>${product.price}</p></td>
+        <td className="listing-col2"><p>{product.release_date}</p></td>
       </tr>
     )
   }

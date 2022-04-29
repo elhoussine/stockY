@@ -110,6 +110,11 @@ div {
   padding: 8px 10px;
 }
 
+#navbar-els1>a:hover {
+  color: #449e92;
+  //font-weight: 550;
+}
+
 #navbar-auth {
   display: flex;
   flex-direction: row;
@@ -128,6 +133,11 @@ div {
   font-size: 15px;
   text-transform: capitalize;
   padding: 8px 10px;
+}
+
+#navbar-els1>#navbar-auth>a:hover {
+  color: #449e92;
+  //font-weight: 550;
 }
 
 #navbar-els2>a {
@@ -157,5 +167,11 @@ div {
 
 #navbar-sell-btn:hover {
   color: white;
-  background-color: #449e92;
+  //border: 1px solid #449e92;
+  background-color: #000;
+  // box-shadow: inset 0 0 20px rgba(255, 255, 255, .5),
+  // 0 0 20px rgba(255, 255, 255, .2);
+  // outline-color: rgba(255, 255, 255, 0);
+  // outline-offset: 15px;
+  // text-shadow: 1px 1px 2px #000;
 }

@@ -108,6 +108,14 @@ input {
     cursor: pointer;
 }
 
+.splash-text-div .splash-btn .shop-now-btn:hover {
+    //border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
 .splash-header .splash-image-div {
     width: 45%;
 }
@@ -149,6 +157,15 @@ input {
 
 .popular-brands-item img {
     width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.popular-brands-item:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .popular-products {

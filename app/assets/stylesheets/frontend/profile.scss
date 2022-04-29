@@ -68,6 +68,10 @@
   filter: grayscale(100%);
 }
 
+.nav-icon img{
+  width: 30px;
+}
+
 .profile-nav-item:hover>.nav-icon {
   font-weight: bold;
   -webkit-filter: none;
@@ -97,6 +101,12 @@
   color: #000;
 }
 
+.profile-selected>.nav-icon {
+  -webkit-filter: none;
+  /* Safari 6.0 - 9.0 */
+  filter: none;
+}
+
 
 #profile-main {
   display: flex;
@@ -112,6 +122,8 @@
   display: flex;
   flex-direction: column;
   letter-spacing: 1px;
+  align-items: center;
+  margin: 3% auto;
 }
 
 #profile-main-title {

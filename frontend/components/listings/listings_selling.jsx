@@ -32,10 +32,11 @@ export default class ListingsSelling extends React.Component {
             <tr className="listing-row">
               <th className="listing-col0"></th>
               <th className="listing-col1">Item</th>
+              <th className="listing-col2">Category</th>
+              <th className="listing-col2">Brand</th>
               <th className="listing-col2">Style</th>
-              <th className="listing-col3">Brand</th>
-              <th className="listing-col4">Price</th>
-              <th className="listing-col4">Release Date</th>
+              <th className="listing-col2">Price</th>
+              <th className="listing-col2">Release Date</th>
             </tr>
           </thead>
           <tbody>

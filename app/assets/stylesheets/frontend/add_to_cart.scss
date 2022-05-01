@@ -1,0 +1,89 @@
+.add-to-cart-form {
+   padding: 0 0 2% 0;
+   margin-left: auto;
+}
+
+.add-to-cart-form a {
+   cursor: pointer;
+}
+
+.quantity-add-container {
+   display: flex;
+   align-items: center;
+}
+
+.quantity-add-container input[type="text"] {
+   margin-bottom: 0px;
+   width: 60px;
+}
+
+.add-to-cart-form label {
+   font-weight: 600;
+   display: block;
+}
+
+
+.quantity-product {
+   transition: border 0.3s ease-in;
+   border: 1.5px solid #e7dfd2;
+}
+
+.quantity-product:hover {
+   border: 1px solid #de6932;
+}
+
+.add-to-cart-form select:hover {
+   border: 1.5px solid #de6932;
+}
+
+.add-to-cart-form select:focus {
+   outline: none;
+}
+
+.add-to-cart-form option {
+   color: #fff;
+}
+
+
+// the anchor tags use pseudo selector content to prevent highlighting.
+.quantity-add::before {
+   content: "+";
+   font-size: 24px;
+   font-weight: 500;
+   padding-left: 6px;
+   padding-right: 6px;
+   line-height: 20px;
+}
+
+.minus::before {
+   content: "-";
+   font-size: 34px;
+   font-weight: 400
+}
+
+.add-cart-button {
+   //width: 40%;
+   text-align: center;
+   letter-spacing: 2px;
+   transition: all .3s ease;
+
+   color: white;
+   background-color: #449e92;
+
+   border: 1px solid black;
+   font-size: 15px;
+   border-radius: 15px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 500;
+   height: 32px;
+   margin-left: auto;
+}
+
+.add-cart-button:hover {
+   background-color: #000;
+   color: white;
+   cursor: pointer;
+
+}

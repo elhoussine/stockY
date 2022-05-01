@@ -20,7 +20,7 @@ export default class ProductsIndex extends React.Component {
 
   render() {
     // console.log(this.state);
-    let products = Object.values(this.state.products);
+    let products = Object.values(this.state.products).slice(0).reverse();
 
     return (
       <div id="products-index-div">

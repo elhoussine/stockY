@@ -30,7 +30,7 @@ export default class NavBar extends React.Component {
 
   render() {
     // console.log(this.state.loggedIn);
-    const { currentUser, toggleCartModal, cartItemQuantity } = this.props;
+    const {cartItemQuantity } = this.props;
     return (
       <div id="navbar-div">
         <span id="logo-span">
@@ -67,6 +67,7 @@ export default class NavBar extends React.Component {
             key={cartItemQuantity}
           >
             <img src="https://img.icons8.com/external-kiranshastry-lineal-kiranshastry/64/000000/external-shopping-cart-interface-kiranshastry-lineal-kiranshastry.png" />
+            {cartItemQuantity > 0 ? <span>{cartItemQuantity > 0 ? cartItemQuantity : ''}</span>: ''}
           </Link>
 
           <span id="navbar-els2">

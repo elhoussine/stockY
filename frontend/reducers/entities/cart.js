@@ -1,4 +1,4 @@
-import { ADD_CART_ITEM, UPDATE_CART_ITEM, REMOVE_CART_ITEM, CHECKOUT } from "../actions/cart";
+import { ADD_CART_ITEM, UPDATE_CART_ITEM, REMOVE_CART_ITEM, CHECKOUT } from "./../../actions/cart";
 
 const _emptyCart = {}
 
@@ -13,7 +13,7 @@ const cartItemsReducer = (state = _emptyCart, action) => {
   // if action.item exists, set item, itemId, item.quantity
   if (action.item) {
     item = action.item;
-    itemId = `${item.id}-${item.bagSize}-${item.grind}`;
+    itemId = item.id;
     item.quantity ||= 0;
   }
 

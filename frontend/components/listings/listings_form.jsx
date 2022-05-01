@@ -12,7 +12,7 @@ export default class ListingsForm extends React.Component {
 
     this.user_id = this.props.currentUser.id;
     this.errors = this.props.errors || [];
-    this.products = [];
+    //this.products = [];
   }
 
   update(field) {
@@ -60,13 +60,13 @@ export default class ListingsForm extends React.Component {
     });
   }
 
-  componentDidMount() {
-    if (isEmpty(this.props.products)) {
-      this.props.fetchProducts().then((pl) => this.setState({ products: Object.values(pl.products) }));
-    } else {
-      this.setState({ products: Object.values(this.props.products) });
-    }
-  }
+  // componentDidMount() {
+  //   if (isEmpty(this.props.products)) {
+  //     this.props.fetchProducts().then((pl) => this.setState({ products: Object.values(pl.products) }));
+  //   } else {
+  //     this.setState({ products: Object.values(this.props.products) });
+  //   }
+  // }
 
   // handleInput(type) {
   //   return (e) => { this.setState({ [type]: Math.round(e.target.value) }) }

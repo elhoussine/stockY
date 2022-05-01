@@ -1,17 +1,48 @@
-.cart-icon img{
-   background: none;
-}
+.cart-icon{
+   display: flex;
+   align-items: center;
+   text-decoration: none;
+   color: #000;
+   letter-spacing: -0.02em;
 
-.cart-icon img {
-   width: 30px;
    -webkit-transform: scale(1);
    transform: scale(1);
    -webkit-transition: .2s ease-in-out;
    transition: .2s ease-in-out;
+   width: 10%;
 }
 
-.cart-icon img:hover{
-   color: #449e92;
+.cart-icon span {
+   // font-weight: 500;
+   // margin: 0 1%;
+
+   font-size: 14px;
+   //margin-left: -10px;
+   margin-bottom: 30px;
+   font-weight: 500;
+   z-index: 2;
+   padding-left: 6px;
+   padding-right: 6px;
+   padding-top: 3px;
+   padding-bottom: 3px;
+   background-color: #449e9271;
+   border-radius: 50%;
+   width: fit-content;
+   height: fit-content;
+   //border: 2px solid white;
+   transition: ease-out 0.40s;
+}
+
+.cart-icon img {
+   width: 30px;
+   // -webkit-transform: scale(1);
+   // transform: scale(1);
+   // -webkit-transition: .2s ease-in-out;
+   // transition: .2s ease-in-out;
+}
+
+.cart-icon:hover{
+   //color: #449e92;
    -webkit-transform: scale(1.2);
    transform: scale(1.2);
    //background: #449e92;
@@ -21,7 +52,7 @@
    display: flex;
    flex-direction: column;
    width: 100%;
-   margin: auto;
+   margin: 2% auto;
    align-items: center;
 }
 .cart-shop-now-link {
@@ -101,24 +132,6 @@
    z-index: 100;
 }
 
-.cart-index-modal {
-   position: fixed;
-   z-index: 5;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   display: flex;
-   justify-content: end;
-   visibility: hidden;
-   color: #3f5920;
-
-}
-
-.modal-visible {
-   visibility: visible;
-}
-
 .cart-index {
    overflow: hidden;
    position: fixed;
@@ -152,19 +165,6 @@
    transform: translateX(0%);
 }
 
-.blurred-modal-area {
-   width: 100%;
-   position: absolute;
-   top: 0;
-   right: 0;
-   bottom: 0;
-   left: 0;
-   background-color: rgba(41, 41, 41, 0);
-   transition: background-color .25s ease-in-out;
-   z-index: 5;
-   visibility: hidden;
-}
-
 .blur-visible {
    visibility: visible;
    background-color: rgba(41, 41, 41, .83);
@@ -174,13 +174,6 @@
 //for closing the modal
 .non-cart-area {
    width: 100%;
-}
-
-.close-cart-modal-button {
-   position: absolute;
-   top: 18px;
-   left: 18px;
-   font-size: 30px;
 }
 
 .cart-title-container {

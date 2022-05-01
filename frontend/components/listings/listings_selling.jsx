@@ -19,7 +19,7 @@ export default class ListingsSelling extends React.Component {
   }
 
   render() {
-    let products = Object.values(this.state.products);
+    let products = Object.values(this.state.products).slice(0).reverse();
     console.log(products);
     return (
       <div id="listings-selling">

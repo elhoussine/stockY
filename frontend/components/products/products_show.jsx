@@ -1,5 +1,6 @@
 import React from 'react';
 import isEmpty from '../../utils/obj-util';
+import AddToCartContainer from "./add_to_cart_container";
 
 export default class ProductShow extends React.Component {
   constructor(props) {
@@ -32,7 +33,11 @@ export default class ProductShow extends React.Component {
       <div className="product-show">
         <div id="prod-show-buttons">
           <header className='product-show-header'>{product.name}</header>
-          <button id="prod-show-buy" onClick={this.handleBuy}>Buy</button>
+          {/* <button id="prod-show-buy" onClick={this.handleBuy}>Buy</button> */}
+          <AddToCartContainer
+            product={product}
+            price = {product.price}
+          />
         </div>
         <br />
         <span id="prod-show-misc">

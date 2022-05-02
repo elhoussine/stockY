@@ -58,7 +58,7 @@ export default class ProductsSearch extends React.Component {
             }
           }
         }
-        for (let model of prod.model.toLowerCase().split(' ')) {
+        for (let model of prod.style.toLowerCase().split(' ')) {
           for (let term of terms) {
             if (model.includes(term)) {
               if (!filtered.includes(prod)) filtered.push(prod);
@@ -66,7 +66,7 @@ export default class ProductsSearch extends React.Component {
             }
           }
         }
-        for (let colorway of prod.colorway.toLowerCase().split(' ')) {
+        for (let colorway of prod.color.toLowerCase().split(' ')) {
           for (let term of terms) {
             if (colorway.includes(term)) {
               if (!filtered.includes(prod)) filtered.push(prod);
@@ -75,14 +75,14 @@ export default class ProductsSearch extends React.Component {
             }
           }
         }
-        for (let style_code of prod.style_code.toLowerCase().split(' ')) {
-          for (let term of terms) {
-            if (style_code.includes(term)) {
-              if (!filtered.includes(prod)) filtered.push(prod);
-              break;
-            }
-          }
-        }
+        // for (let style_code of prod.description.toLowerCase().split(' ')) {
+        //   for (let term of terms) {
+        //     if (style_code.includes(term)) {
+        //       if (!filtered.includes(prod)) filtered.push(prod);
+        //       break;
+        //     }
+        //   }
+        // }
 
       }
     }
@@ -94,12 +94,19 @@ export default class ProductsSearch extends React.Component {
   render() {
     let products = this.state.filtered;
 
+    console.log(this.state);
+
     if (products.length === 0) return (
       <div id="products-index-div">
         <b className="center-everything">
           No search results found.
 
         </b>
+        {/* <ul id="products-list">
+          {Object.values(this.state.products).map(product => (
+            <ProductsIndexItem product={product} key={`product${product.id}`} />
+          ))}
+        </ul> */}
       </div>
     )
 

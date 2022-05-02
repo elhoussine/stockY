@@ -41,7 +41,9 @@ export default class ListingItem extends React.Component {
     return (
       <tr className="listing-row listing-item">
         <td className="listing-col0">
-          <Link to="#"><img className="delete-listing-item-btn" src="https://img.icons8.com/office/30/000000/delete--v1.png" onClick={(e) => this.removeProduct(e, product.id)} height="25px" /></Link>
+          <Link to="#" onClick={(e) => this.removeProduct(e, product.id)}>
+            <i className="fa fa-trash listing-remove-product" aria-hidden="true"></i>
+          </Link>
         </td>
         <td className="listing-col1 listing-item-info">
           <span className="listing-item-pic">

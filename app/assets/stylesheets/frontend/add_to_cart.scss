@@ -1,20 +1,14 @@
 .add-to-cart-form {
    padding: 0 0 2% 0;
    margin-left: auto;
+   display: flex;
+   align-items: center;
+   width: 30%;
+   max-width: 270px;
 }
 
 .add-to-cart-form a {
    cursor: pointer;
-}
-
-.quantity-add-container {
-   display: flex;
-   align-items: center;
-}
-
-.quantity-add-container input[type="text"] {
-   margin-bottom: 0px;
-   width: 60px;
 }
 
 .add-to-cart-form label {
@@ -29,20 +23,9 @@
 }
 
 .quantity-product:hover {
-   border: 1px solid #de6932;
+   border: 1px solid #449e92;
 }
 
-.add-to-cart-form select:hover {
-   border: 1.5px solid #de6932;
-}
-
-.add-to-cart-form select:focus {
-   outline: none;
-}
-
-.add-to-cart-form option {
-   color: #fff;
-}
 
 
 // the anchor tags use pseudo selector content to prevent highlighting.
@@ -62,28 +45,55 @@
 }
 
 .add-cart-button {
-   //width: 40%;
+   width: 65%;
+   max-width: 170px;
    text-align: center;
    letter-spacing: 2px;
    transition: all .3s ease;
+   //color: #2a4e49;
+   color: #ffffff;
 
-   color: white;
-   background-color: #449e92;
-
-   border: 1px solid black;
+   background-color: #000;
+   //background-color: #75bcb1be;
+   border: 1px solid #2a4e49;
    font-size: 15px;
-   border-radius: 15px;
+   border-radius: 30px;
    display: flex;
    align-items: center;
    justify-content: center;
-   font-weight: 500;
-   height: 32px;
+   font-weight: 550;
+   max-height: 40px;
+   padding: 3%;
    margin-left: auto;
 }
 
 .add-cart-button:hover {
-   background-color: #000;
-   color: white;
+   //background-color: #000;
+
+   background-color: #75bcb1be;
+   //color: #ffffff;
+
+   color: #2a4e38;
    cursor: pointer;
 
+}
+
+.add-to-cart-form input {
+   width: 30%;
+   max-width: 30px;
+   text-align: center;
+   height: 25px;
+   //background-color: #449e9271;
+   color: #383a34;
+   border: 1px solid #d1cabf;
+   //color: black;
+}
+
+.add-to-cart-form a {
+   cursor: pointer;
+}
+
+.add-to-cart-form a:hover {
+   cursor: pointer;
+   color: #449e92;
 }

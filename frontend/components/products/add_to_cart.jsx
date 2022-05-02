@@ -38,19 +38,16 @@ class AddToCart extends React.Component {
    render() {
       return (
          <form className="add-to-cart-form" onSubmit={this.handleSubmit}>
-
-            <div className="quantity-add-container">
-               <a className="quantity-add minus" onClick={() => this.updateQuantity(-1)}></a>
-               <input type="text"
-                  className="input-box quantity-product"
-                  value={this.state.quantity}
-                  pattern="(500|([1-4][0-9][0-9])|([1-9][0-9])|[1-9])"
-                  title="Quantity should contain only positive numerical values and be less than 500"
-                  onChange={this.update("quantity")}
-               />
-               <a className="quantity-add" onClick={() => this.updateQuantity(1)}></a>
-               <button className="add-cart-button">{this.state.cartAddButtonTitle}</button>
-            </div>
+            <a className="quantity-add minus" onClick={() => this.updateQuantity(-1)}></a>
+            <input type="text"
+               className="input-box quantity-product"
+               value={this.state.quantity}
+               pattern="(500|([1-4][0-9][0-9])|([1-9][0-9])|[1-9])"
+               title="Quantity should contain only positive numerical values and be less than 500"
+               onChange={this.update("quantity")}
+            />
+            <a className="quantity-add" onClick={() => this.updateQuantity(1)}></a>
+            <button className="add-cart-button">{this.state.cartAddButtonTitle}</button>
          </form>
       )
    }

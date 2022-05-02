@@ -5,6 +5,7 @@
    color: #383a34;
    align-items: center;
    justify-content: space-between;
+   letter-spacing: 1px;
 }
 
 .cart-item-photo-container {
@@ -74,10 +75,12 @@
 
 .cart-item-price {
    font-weight: 550;
+   letter-spacing: 2px;
 }
 
 .cart-item-delete{
    width: 10%;
+   font-size: 22px;
    cursor: pointer;
 }
 

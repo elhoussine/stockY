@@ -72,6 +72,14 @@
 
 }
 
+.listing-col0 .listing-remove-product{
+  font-size: 20px;
+  color: #000;
+}
+.listing-col0 .listing-remove-product:hover {
+  color: #d65555;
+}
+
 .listing-col0>a {
   display: flex;
   justify-content: center;

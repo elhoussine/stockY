@@ -74,7 +74,7 @@
 
 .listing-col0 .listing-remove-product{
   font-size: 20px;
-  color: #000;
+  color: #383a34;
 }
 .listing-col0 .listing-remove-product:hover {
   color: #d65555;
@@ -165,10 +165,47 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  width: 400px;
-  border: 1px solid #c3c3c3;
-  padding: 15px;
+  //margin-left: 10px;
+  width: 100%;
   letter-spacing: 1px;
+}
+
+.listing-form-col{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 2% 0 0 0;
+  align-items: center;
+}
+
+.listing-form-cel {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listing-form-cel{ 
+  input[type=text],input[type=date], input[type=number], textarea {
+    width: 60%;
+    max-width: 60%;
+    padding: 2% 1%;
+    font-size: 15px;
+  }
+
+  select{
+    width: 63%;
+    max-width: 63%;
+    padding: 2% 1%;
+    font-size: 15px;
+  }
+
+  input[type=file] {
+    width: 62%;
+    max-width: 62%;
+    padding: 2% 1%;
+    font-size: 15px;
+  }
 }
 
 #listings-form>h2 {
@@ -219,19 +256,20 @@
 }
 
 #listings-form-submit {
+  width: 60%;
   font-size: 15px;
-  margin: auto;
+  margin-left: auto;
   text-align: center;
   cursor: pointer;
   display: flex;
-  size: 200%;
-  background: white;
-  color: black;
+  color: #ffffff;
+  background: #000000;
   border: 1px solid black;
-  border-radius: 20px;
+  border-radius: 30px;;
+  // border-top-right-radius: 20px;
+  // border-bottom-right-radius: 20px;
   border-color: black;
   height: 32px;
-  width: 100px;
   font-weight: 500;
   text-shadow: none;
   text-decoration: none;
@@ -241,8 +279,8 @@
 }
 
 #listings-form-submit:hover {
-  color: white;
-  background-color: #449e92;
+  background-color: #75bcb1be;
+  color: #2a4e38;
 }
 
 #listings-success {

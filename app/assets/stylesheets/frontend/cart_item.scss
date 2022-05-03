@@ -9,7 +9,7 @@
 }
 
 .cart-item-photo-container {
-   width: 20%;
+   width: 15%;
    height: auto;
    position: relative;
    display: flex;
@@ -73,12 +73,14 @@
 }
 
 .cart-item-price {
+   width: 20%;
+   text-align: right;
    font-weight: 550;
    letter-spacing: 2px;
 }
 
 .cart-item-delete{
-   width: 10%;
+   width: 15%;
    font-size: 22px;
    cursor: pointer;
 }
@@ -88,7 +90,7 @@
 }
 
 .cart-item-name{
-   width: 20%;
+   width: 30%;
 }
 
 .cart-item-brand {

@@ -119,44 +119,44 @@ export default class ListingsForm extends React.Component {
             </div>
             <div className='listing-form-cel'>
               <label htmlFor="">Name</label>
-              <input type="text" name="product[name]" id="" value={this.state.name} onChange={this.update('name')} />
+              <input type="text" required name="product[name]" id="" value={this.state.name} onChange={this.update('name')} />
             </div>
           </div>
           <div className='listing-form-col'>
             <div className='listing-form-cel'>
               <label htmlFor="">Style</label>
-              <input type="text" name="product[style]" id="" value={this.state.style} onChange={this.update('style')} />
+              <input type="text" required name="product[style]" id="" value={this.state.style} onChange={this.update('style')} />
             </div>
             <div className='listing-form-cel'>
               <label htmlFor="">Color</label>
-              <input type="text" name="product[color]" id="" value={this.state.color} onChange={this.update('color')} />
+              <input type="text" required name="product[color]" id="" value={this.state.color} onChange={this.update('color')} />
             </div>
           </div>
           <div className='listing-form-col'>
             <div className='listing-form-cel'>
               <label htmlFor="">Brand</label>
-              <input type="text" name="product[brand]" id="" value={this.state.brand} onChange={this.update('brand')} />
+              <input type="text" required name="product[brand]" id="" value={this.state.brand} onChange={this.update('brand')} />
             </div>
             <div className='listing-form-cel'>
               <label htmlFor="">Price $$</label>
-              <input type="number" name="product[price]" id="" value={this.state.price} onChange={this.update('price')} />
+              <input type="number" required name="product[price]" id="" value={this.state.price} onChange={this.update('price')} />
             </div>
           </div>
           <div className='listing-form-col'>
             <div className='listing-form-cel'>
               <label htmlFor="">Release Date</label>
-              <input type="date" name="product[release_date]" id="" value={this.state.release_date} onChange={this.update('release_date')} />
+              <input type="date" required name="product[release_date]" id="" value={this.state.release_date} onChange={this.update('release_date')} />
             </div>
             <div className='listing-form-cel'>
               <label htmlFor="">Description</label>
-              <textarea name="product[description]" id="" value={this.state.description} onChange={this.update('description')} />
+              <textarea required name="product[description]" id="" value={this.state.description} onChange={this.update('description')} />
               
             </div>
           </div>
           <div className='listing-form-col'>
             <div className='listing-form-cel'>
               <label htmlFor="">Image</label>
-              <input type="file" name="product[image]" id="" onChange={this.handleFile} />
+              <input type="file" required name="product[image]" id="" onChange={this.handleFile} />
             </div>
             <div className='listing-form-cel'>
             </div>

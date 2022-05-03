@@ -54,7 +54,7 @@ class CartItem extends React.Component {
                   >{cartItem.name} 
                </Link>
             </div>
-            <div className="cart-item-brand">{cartItem.brand} </div>
+            {/* <div className="cart-item-brand">{cartItem.brand} </div> */}
 
             <div className="cart-item-quantity">
                <a className="quantity-add minus" onClick={() => this.update(-1)}></a>

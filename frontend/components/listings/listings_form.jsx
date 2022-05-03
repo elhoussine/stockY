@@ -150,7 +150,6 @@ export default class ListingsForm extends React.Component {
             <div className='listing-form-cel'>
               <label htmlFor="">Description</label>
               <textarea required name="product[description]" id="" value={this.state.description} onChange={this.update('description')} />
-              
             </div>
           </div>
           <div className='listing-form-col'>

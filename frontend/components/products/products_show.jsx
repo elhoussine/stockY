@@ -9,20 +9,10 @@ export default class ProductShow extends React.Component {
     this.state = {
       productId: prodId,
     }
-    this.handleBuy = this.handleBuy.bind(this);
   }
 
   componentDidMount() {
     this.props.fetchProduct(this.state.productId);
-  }
-
-  handleBuy(e) {
-    e.preventDefault();
-    if (!this.props.currentUser) {
-      location.href = location.origin + `/#/login`;
-      return false;
-    }
-    
   }
 
   render() {
@@ -37,6 +27,7 @@ export default class ProductShow extends React.Component {
           <AddToCartContainer
             product={product}
             price = {product.price}
+            currentUser = {this.props.currentUser}
           />
         </div>
         <br />

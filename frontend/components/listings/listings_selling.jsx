@@ -15,15 +15,15 @@ export default class ListingsSelling extends React.Component {
   componentDidMount() {
 
     this.props.fetchProducts().then(action => this.setState({ products: action.products }));
-    console.log(this.state.products);
+    //console.log(this.props);
   }
 
   render() {
     let products = Object.values(this.state.products).slice(0).reverse();
-    console.log(products);
+    //console.log(this.state);
     return (
       <div id="listings-selling">
-        <span id="listings-sell-header">Selling</span>
+        <span id="listings-sell-header">Listings</span>
 
         <Link to="/profile/listings/new" className="new-listing">+ New Item</Link>
         
@@ -40,7 +40,8 @@ export default class ListingsSelling extends React.Component {
             </tr>
           </thead>
           <tbody>
-            {products.map(product => isEmpty(product) ? null : <ListingItemContainer product={product} key={`product${product.id}`} />)}
+            {}
+            {products.map(product => (isEmpty(product) || product.seller_id != this.props.currentUser.id) ? null : <ListingItemContainer product={product} key={`product${product.id}`} />)}
           </tbody>
         </table>
       </div>

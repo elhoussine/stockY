@@ -13,11 +13,13 @@ class AddToCart extends React.Component {
 
    handleSubmit(e) {
       e.preventDefault();
+      console.log(this.props);
       this.setState({ cartAddButtonTitle: "Added to Cart ✔" })
       const {addCartItem, price } = this.props;
       let itemAttr = {
          quantity: this.state.quantity,
-         price: price
+         price: price,
+         buyerId: this.props.currentUser.id
       };
       let product = Object.assign({}, this.props.product, itemAttr);
       addCartItem(product, parseInt(this.state.quantity));

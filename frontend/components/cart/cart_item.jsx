@@ -6,6 +6,7 @@ class CartItem extends React.Component {
       super(props);
       this.state = {
          quantity: parseInt(this.props.cartItem.quantity),
+         buyerId: this.props.currentUser.id
       }
    }
 

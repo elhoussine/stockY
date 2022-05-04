@@ -58,7 +58,8 @@ function Footer(props) {
          <hr className="footer-line" />
          <div className="sub-footer-content">
             <div>
-               <span>UNITED STATES &nbsp;|&nbsp; $ USD</span>
+               <p>UNITED STATES &nbsp;|&nbsp; $ USD
+               <br />©2022 ALL RIGHTS RESERVED </p>
             </div>
             <div className="social-icons">
                <a href="https://github.com/elhoussine" target="_blank" title="Github">
@@ -78,7 +79,8 @@ function Footer(props) {
                </a>
             </div>
             <div>
-               <p>Inspired by StockX<br />proudly built by Elhoussine</p>
+               <p className="right">Inspired by StockX
+               <br />proudly built by Elhoussine</p>
             </div>
          </div>
       </div>

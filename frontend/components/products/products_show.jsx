@@ -39,26 +39,34 @@ export default class ProductShow extends React.Component {
           </span>
         </span>
 
-        <div id="prod-show-main">
-          <div id="prod-show-img">
-            <img src={product.image} />
-            <span id="prod-show-detail">
-              <div><p className="bold-this">Category</p> <span>{product.category}</span></div>
-              <br />
-              <div><p className="bold-this">Brand</p> <span>{product.brand}</span></div>
-              <br />
-              <div><p className="bold-this">Style</p> <span>{product.style}</span></div>
-              <br />
-              <div><p className="bold-this">Color</p> <span>{product.color ? product.color.split(' ').join('/') : 'black'}</span></div>
-              <br />
-              <div><p className="bold-this">Price</p> <span className="bold-this">${product.price}</span></div>
-              <br />
-              <div><p className="bold-this">Release Date</p> <span>{product.release_date}</span></div>
-              <br />
-              <div><p className="bold-this">Description</p> <span id='description'>{product.description}</span></div>
-            </span>
+        <div className="prod-show-main">
+            <div className="prod-show-img">
+              <img src={product.image} alt={product.name}/>
+            </div>
+            <div className="prod-show-detail">
+              <div className='prod-info-detail'>
+                <p className="bold-this">Category</p> <span>{product.category}</span>
+              </div>
+              <div className='prod-info-detail'>
+                <p className="bold-this">Brand</p> <span>{product.brand}</span>
+              </div>
+              <div className='prod-info-detail'>
+                <p className="bold-this">Style</p> <span>{product.style}</span>
+              </div>
+              <div className='prod-info-detail'>
+                <p className="bold-this">Color</p> <span>{product.color ? product.color.split(' ').join('/') : 'N/A'}</span>
+              </div>
+              <div className='prod-info-detail'>
+                <p className="bold-this">Price</p> <span className="bold-this">${product.price}</span>
+              </div>
+              <div className='prod-info-detail'>
+                <p className="bold-this">Release Date</p> <span>{product.release_date}</span>
+              </div>
+              <div className='prod-info-detail'>
+                <p className="bold-this">Description</p> <span>{product.description}</span>
+              </div>
+            </div>
           </div>
-        </div>
       </div>
     )
   }

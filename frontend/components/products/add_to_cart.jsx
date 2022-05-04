@@ -19,7 +19,7 @@ class AddToCart extends React.Component {
       let itemAttr = {
          quantity: this.state.quantity,
          price: price,
-         buyerId: this.props.currentUser.id
+         //buyerId: this.props.currentUser.id
       };
       let product = Object.assign({}, this.props.product, itemAttr);
       addCartItem(product, parseInt(this.state.quantity));

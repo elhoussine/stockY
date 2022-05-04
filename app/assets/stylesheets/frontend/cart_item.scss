@@ -2,7 +2,7 @@
    width: 85%;
    display: flex;
    border-bottom: 1px solid #e7dfd2;
-   color: #383a34;
+   //color: #383a34;
    align-items: center;
    justify-content: space-between;
    letter-spacing: 1px;
@@ -84,6 +84,7 @@
    width: 15%;
    font-size: 22px;
    cursor: pointer;
+   color: #383a34;
 }
 
 .cart-item-delete:hover {

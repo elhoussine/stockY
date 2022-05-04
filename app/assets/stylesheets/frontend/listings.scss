@@ -138,20 +138,20 @@
 
 .new-listing {
   display: flex;
-  border: 1px solid black;
+  border: 1px solid #000000;
   border-radius: 25px;
   width: 100px;
   height: 30px;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #000000;
   margin: 0 0 1% 0;
   box-sizing: border-box;
 }
 
 .new-listing:hover {
   color: white;
-  background-color: #449e92;
+  background-color: #000000;
 }
 
 #listings-form-div {

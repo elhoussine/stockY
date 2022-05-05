@@ -84,7 +84,7 @@ export default class SessionForm extends React.Component {
     return (
       <div id="form-div">
         <span id="form-span">
-          {is_edit_form ? <div id="form-header"><strong>Edit</strong></div> : (!is_login_form ? (<div id="form-header"><div className="selected btn" >Sign Up</div> <Link className="btn" to="/login"><div>Log In</div></Link></div>) : (<div id="form-header"><Link className="btn" to="/register"><div>Sign Up</div></Link> <div className="selected btn" >Log In</div></div>))}
+          {is_edit_form ? <div id="form-header"><strong>Edit Profile</strong></div> : (!is_login_form ? (<div id="form-header"><div className="selected btn" >Sign Up</div> <Link className="btn" to="/login"><div>Log In</div></Link></div>) : (<div id="form-header"><Link className="btn" to="/register"><div>Sign Up</div></Link> <div className="selected btn" >Log In</div></div>))}
           <form action="" id="session-form" onSubmit={this.handleSubmit}>
             {!is_login_form ?
               <label className="form-label">
@@ -101,7 +101,7 @@ export default class SessionForm extends React.Component {
               <input className="form-input" type="password" name="user[password]" placeholder="Password" value={this.state.password} onChange={this.handleInput('password')} />
             </label>
             <input type="submit" id="session-form-submit" className="session-form-btn" value="Submit" />
-            {is_login_form ? <button id="guest-login-btn" className="session-form-btn" onClick={this.handleGuestSubmit}>Demo Login</button> : null}
+            {is_login_form ? <button id="guest-login-btn" className="session-form-btn" onClick={this.handleGuestSubmit}>Demo User</button> : null}
           </form>
         </span>
         <div id="user-form-errors" className="hidden">

@@ -52,7 +52,7 @@ export default class Splash extends React.Component {
         </div>
 
         <div className='popular-products'>
-          <h3 className='popular-products-title'>Most Popular Products</h3>
+          <h3 className='popular-products-title'>Recently Added Products</h3>
           <ProductsIndexContainer />
           <div className='popular-products-items'></div>
         </div>

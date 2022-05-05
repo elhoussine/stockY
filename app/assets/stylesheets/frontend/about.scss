@@ -10,6 +10,7 @@
 
 #about-div>p {
   width: 50%;
+  line-height: 18px;
 }
 
 #about-div>ul {
@@ -18,7 +19,7 @@
 }
 
 #about-div>ul>li:first-child {
-  font-size: 48px;
+  font-size: 42px;
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
@@ -28,7 +29,8 @@
 }
 
 #about-div>ul>li:not(:first-child) {
-  margin: 3%;
+  margin: 2% 0 0 2%;
   list-style-type: disc;
-  font-size: 24px;
+  font-size: 21px;
+  line-height: 28px;
 }

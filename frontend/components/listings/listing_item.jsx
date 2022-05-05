@@ -47,7 +47,9 @@ export default class ListingItem extends React.Component {
         </td>
         <td className="listing-col1 listing-item-info">
           <span className="listing-item-pic">
-            <img src={product.image} width="80px" />
+            <Link to={`/products/${product.id}/view`}>
+              <img src={product.image} width="80px" />
+            </Link>
           </span>
           <Link to={`/products/${product.id}/view`}>
             <p>{product.name}</p>

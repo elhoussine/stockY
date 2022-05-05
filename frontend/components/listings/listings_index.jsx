@@ -4,7 +4,7 @@ import ListingItemContainer from './listing_item_container';
 import { Link } from 'react-router-dom';
 import { withRouter } from 'react-router';
 
-export default class ListingsSelling extends React.Component {
+export default class ListingsIndex extends React.Component {
   constructor(props) {
     super(props);
     this.state = {

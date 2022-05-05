@@ -39,8 +39,20 @@
 // }
 
 .products-index-item:hover {
-  border: 1px solid #449e92;
+  border: 1px solid #35897d;
+  //border: 1px solid #000;
   cursor: pointer;
+}
+
+.products-index-item:hover .products-index-tag {
+  background-color: #35897d;
+  //background-color: #000;
+  color: white;
+}
+
+.products-index-item>a>span>img {
+  width: 70%;
+  box-sizing: border-box;
 }
 
 .products-index-item>a {
@@ -78,15 +90,4 @@
 .product-price {
   //color: #7b7b7b;
   font-weight: bold;
-}
-
-
-.products-index-item:hover .products-index-tag {
-  background-color: #449e92;
-  color: white;
-}
-
-.products-index-item>a>span>img {
-  width: 70%;
-  box-sizing: border-box;
 }

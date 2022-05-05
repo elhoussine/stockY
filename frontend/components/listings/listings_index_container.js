@@ -2,7 +2,7 @@ import React from 'react';
 import {
   connect
 } from 'react-redux';
-import ListingsSelling from './listings_selling';
+import ListingsIndex from './listings_index';
 import {
   fetchProducts
 } from '../../actions/products';
@@ -24,4 +24,4 @@ const mapDispatchToProps = dispatch => ({
   fetchLastSale: (id) => dispatch(fetchLastSale(id))
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(ListingsSelling);
+export default connect(mapStateToProps, mapDispatchToProps)(ListingsIndex);

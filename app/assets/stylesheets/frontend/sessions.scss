@@ -22,7 +22,7 @@
   border-radius: 2.5px;
   padding: 20px;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
 }
 
 .formtype-edit {
@@ -39,7 +39,7 @@
   justify-content: space-evenly;
   height: 50px;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   align-items: center;
   box-sizing: border-box;
 }
@@ -52,7 +52,7 @@
   font-size: 14px;
   cursor: pointer;
   padding-bottom: 5%;
-  padding-top: 5%;
+  //padding-top: 5%;
   border-bottom: 1px solid gray;
   width: 50%;
   justify-content: center;
@@ -63,13 +63,13 @@
   font-size: 14px;
   cursor: pointer;
   padding-bottom: 5%;
-  padding-top: 5%;
-  border-bottom: 2px solid #449e92;
+  //padding-top: 5%;
+  border-bottom: 2px solid #35897d;
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  font-weight: 550;
 }
 
 #form-header>strong {
@@ -102,7 +102,7 @@
   justify-content: space-between;
   font-size: 16px;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   margin-top: 20px;
 }
 
@@ -117,36 +117,27 @@
 }
 
 .form-input {
-  height: 25x;
-  margin: -1px 3px;
   border: 1px solid #BBBBBB;
-  border-radius: 2.5px;
-  font-size: 12px;
-  width: 97%;
-  padding: 12px 10px 5px;
-}
-
-#session-form-submit {
-  margin-top: 12px;
-  margin-bottom: 10px;
+  font-size: 15px;
+  width: 100%;
+  padding: 4%;
 }
 
 .session-form-btn {
-  size: 200%;
-  background: #90dad099;
-  border-radius: 2.5px;
-  color: #000;
-  border: 1px solid #000;
-  height: 30px;
+  background: #8fcec6;
+  color: #1a7165;
+  border: 1px solid #35897d;
   width: 100%;
+  font-size: 16px;
   text-shadow: none;
   box-shadow: none;
-  margin-top: 2px;
+  margin: 3% 0 0 0;
   cursor: pointer;
+  padding: 3.5%;
 }
 
 .session-form-btn:hover {
-  background: #449e92;
+  background: #35897d;
   color: white;
 }
 

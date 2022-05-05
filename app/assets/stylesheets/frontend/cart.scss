@@ -35,13 +35,13 @@
 
 .cart-icon img {
    width: 30px;
-   // -webkit-transform: scale(1);
-   // transform: scale(1);
-   // -webkit-transition: .2s ease-in-out;
-   // transition: .2s ease-in-out;
+   -webkit-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition: .2s ease-in-out;
+   transition: .2s ease-in-out;
 }
 
-.cart-icon:hover{
+.cart-icon:hover img{
    //color: #449e92;
    -webkit-transform: scale(1.2);
    transform: scale(1.2);
@@ -68,7 +68,7 @@
    letter-spacing: 1px;
 }
 .cart-shop-now-btn {
-   background-color: #449e92;
+   background-color: #35897d;
    color: #fff;
    border: none;
    border-radius: 30px;

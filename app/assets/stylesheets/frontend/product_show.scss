@@ -85,7 +85,7 @@
   display: flex;
   flex-direction: column;
   //text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   letter-spacing: 1px;
   width: 50%;
   color: #333;
@@ -100,8 +100,9 @@
   border-bottom: 1px solid #f0f0f0;
   display: flex;
   flex-direction: row;
-  margin: 1.5% 0;
-  padding: 1.5% 0;
+  margin: 1.2% 0;
+  padding: 0.6% 0;
+  line-height: 25px;
 }
 
 .prod-info-detail p{

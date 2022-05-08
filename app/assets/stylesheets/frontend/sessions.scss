@@ -10,6 +10,7 @@
   align-items: center;
   flex-direction: column;
   margin-top: 10vh;
+  letter-spacing: 1px;
 }
 
 #form-span {
@@ -20,13 +21,13 @@
   justify-content: center;
   border: 1px solid #CCCCCC;
   border-radius: 2.5px;
-  padding: 20px;
+  padding: 25px 35px;
   width: 100%;
   max-width: 400px;
 }
 
 .formtype-edit {
-  height: 350px;
+  height: 375px;
 }
 
 #form-span:hover {
@@ -60,6 +61,7 @@
 }
 
 #form-header>.selected {
+  transition: all .3s ease;
   font-size: 14px;
   cursor: pointer;
   padding-bottom: 5%;
@@ -76,7 +78,6 @@
   width: 100%;
   text-align: center;
   font-size: 16px;
-  padding-top: 10px;
   position: relative;
   font-weight: 550;
   border-bottom: 1px solid #48b5a8;
@@ -125,14 +126,19 @@
   font-size: 15px;
   width: 100%;
   padding: 4%;
+  letter-spacing: 1px;
 }
 
 .session-form-btn {
-  background: #8fcec6;
-  color: #1a7165;
+  transition: all .3s ease;
+  font-size: 15px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  color: #2a4e49;
+  background-color: #75bcb1be;
   border: 1px solid #35897d;
+
   width: 100%;
-  font-size: 16px;
   text-shadow: none;
   box-shadow: none;
   margin: 3% 0 0 0;
@@ -143,6 +149,7 @@
 .session-form-btn:hover {
   background: #35897d;
   color: white;
+  border: 1px solid #fff;
 }
 
 .session-form-btn:active {

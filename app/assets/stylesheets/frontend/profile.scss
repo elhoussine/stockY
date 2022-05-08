@@ -13,6 +13,7 @@
   //height: 90vh;
   width: 17%;
   max-width: 250px;
+  min-width: 200px;
   overflow: hidden;
   background-color: #f5f5f5;
   //z-index: 1;
@@ -123,13 +124,18 @@
   flex-direction: column;
   letter-spacing: 1px;
   align-items: center;
-  margin: 3% auto;
+  margin: 1% auto;
+  width: 97%;
 }
 
 #profile-main-title {
-  margin-bottom: 5px;
   font-family: 'impact';
   font-size: 30px;
+  border-bottom: 1px solid #35897d;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
 }
 
 #profile-main-div>a {
@@ -151,18 +157,19 @@
 }
 
 #profile-main-div>button {
-  width: 80px;
   border: 1px solid black;
   //letter-spacing: 0;
   font-size: 15px;
-  border-radius: 15px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 500;
-  height: 32px;
+  font-weight: 550;
   background-color: white;
   margin-top: 15px;
+  padding: 10px 20px;
+  letter-spacing: 1px;
+  transition: all .3s ease;
 }
 
 #profile-main-div>button:hover {
@@ -180,5 +187,5 @@
 }
 
 #welcome-msg {
-  margin-top: 22px;
+  margin-top: 30px;
 }

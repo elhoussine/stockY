@@ -1,5 +1,5 @@
 .cart-item {
-   width: 85%;
+   width: 100%;
    display: flex;
    border-bottom: 1px solid #e7dfd2;
    //color: #383a34;
@@ -89,6 +89,7 @@
 
 .cart-item-delete:hover {
    color: #d65555;
+   transition: all .3s ease;
 }
 
 .cart-item-name{

@@ -5,6 +5,7 @@ function Footer(props) {
    return (
       <div className="footer">
          <div className="footer-content">
+            <Link to="/products">
             <ul>
                <span>AIR JORDAN</span>
                <li>Air Jordan 1</li>
@@ -14,7 +15,8 @@ function Footer(props) {
                <li>Air Jordan 4</li>
                <li>Jordan 1 Mid</li>
             </ul>
-
+            </Link>
+            <Link to="/products">
             <ul>
                <span>YEEZY</span>
                <li>Yeezy Boost 350</li>
@@ -24,7 +26,8 @@ function Footer(props) {
                <li>Yeezy Slides</li>
                <li>Yeezy Foam RNNR</li>
             </ul>
-
+            </Link>
+            <Link to="/products">
             <ul>
                <span>POPULAR RELEASES</span>
                <li>Yeezy Foam RNNR Sulfur</li>
@@ -34,7 +37,8 @@ function Footer(props) {
                <li>New Balance 2002R Joe Freshgoods</li>
                <li>Nike Air Force 1 Low White</li>
             </ul>
-
+            </Link>
+            <Link to="/about">
             <ul>
                <span>RESOURCES</span>
                <li>Partners</li>
@@ -44,7 +48,8 @@ function Footer(props) {
                <li>Blog</li>
                <li>Help Center</li>
             </ul>
-
+            </Link>
+            <Link to="/about">
             <ul>
                <span>COMPANY</span>
                <li>About Us</li>
@@ -54,6 +59,7 @@ function Footer(props) {
                <li>Media Kit</li>
                <li>Careers</li>
             </ul>
+            </Link>
          </div>
          <hr className="footer-line" />
          <div className="sub-footer-content">

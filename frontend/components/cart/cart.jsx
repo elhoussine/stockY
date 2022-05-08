@@ -34,7 +34,7 @@ class Cart extends React.Component {
       const { cartItems, subtotal, quantity, checkout } = this.props;
       return (
          <div className="cart">
-
+            <p className="cart-main-title">CART</p>
             {Object.values(cartItems).length !== 0 ? (
                <>
                   <div className="cart-item-list-container">

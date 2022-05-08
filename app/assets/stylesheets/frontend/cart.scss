@@ -25,7 +25,7 @@
    padding-right: 6px;
    padding-top: 3px;
    padding-bottom: 3px;
-   background-color: #449e9271;
+   background-color: #92d4cb;
    border-radius: 50%;
    width: fit-content;
    height: fit-content;
@@ -55,6 +55,18 @@
    margin: 2% auto;
    align-items: center;
 }
+
+.cart-main-title {
+   font-family: 'impact';
+   font-size: 30px;
+   border-bottom: 1px solid #35897d;
+   width: 95%;
+   text-align: center;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+   letter-spacing: 2px;
+}
+
 .cart-shop-now-link {
    margin: 3% auto;
    text-align: center;
@@ -84,6 +96,7 @@
    justify-content: center;
    letter-spacing: 3px;
    cursor: pointer;
+   transition: all .2s ease;
 }
 
 .cart-shop-now-btn:hover {
@@ -92,6 +105,7 @@
    outline-color: rgba(255, 255, 255, 0);
    outline-offset: 15px;
    text-shadow: 1px 1px 2px #427388;
+   font-size: 14px;
 }
 
 .cart-count {
@@ -157,7 +171,7 @@
    align-items: center;
    height: auto;
    max-height: 100%;
-   width: 100%;
+   width: 70%;
    overflow-y: auto;
 }
 
@@ -188,8 +202,7 @@
 
 .checkout-container {
    border-top: 1px solid #7e7e7e;
-   padding: 1%;
-   width: 85%;
+   width: 70%;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -201,7 +214,7 @@
    display: flex;
    justify-content: space-between;
    font-size: 20px;
-   margin-bottom: 6px;
+   margin-top: 10px;
    letter-spacing: 1px;
 }
 
@@ -211,8 +224,7 @@
 }
 
 .cart-checkout {
-   width: 30%;
-   max-width: 280px;
+   min-width: 280px;
    text-align: center;
    letter-spacing: 2px;
    transition: all .3s ease;
@@ -236,34 +248,6 @@
    color: #ffffff;
    cursor: pointer;
 
-}
-
-#checkout:hover {
-   color: rgb(222, 105, 50);
-   background-color: #fff;
-}
-
-.cart-shop-now {
-   text-shadow: 1px solid rgba(255, 255, 255, 0.516);
-   margin-top: 10px;
-   line-height: 48px;
-   text-align: center;
-   font-size: 15px;
-   text-transform: uppercase;
-   font-weight: 700;
-   width: 200px;
-   background-color: rgb(222, 105, 50);
-   border: 2px solid rgb(222, 105, 50);
-   border-radius: 2px;
-   color: #fff;
-   transition-property: background-color, color;
-   transition-duration: .2s;
-   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.cart-shop-now:hover {
-   color: rgb(222, 105, 50);
-   background-color: #fff;
 }
 
 .cart-thanks-msg {

@@ -1,5 +1,3 @@
-# StockX
-
 <p align="center">
   <a href="https://stockxy.herokuapp.com/#/">
     <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/logo_white.png"></img>
@@ -40,7 +38,7 @@ The cart is stored in both in the Redux state and in local storage to persist it
   <img src="" alt="cart-add-gif"></img>
 </p>
 
-Typing into the search bar calls a debounced function to request all products from the database that match the query string. Results are queried from the database based on the product names, categories, and ingredient lists. The API request is only sent after 600ms have elapsed since the last keypress to limit load on the database. Once the results are received back, they are dislayed in the search bar result dropdown and each result links to the individual product pages. Clicking outside of the result dropdown hides the searchbar.
+Typing into the search bar calls a debounced function to request all products from the database that match the query string. Results are queried from the database based on the product names, categories, and ingredient lists. The API request is only sent after 600ms have elapsed since the last keypress to limit load on the database. Once the results are received back, they are dislayed in the search bar result dropdown and each result links to the individual product pages.
 
 ```Ruby
 class Product < ApplicationRecord
@@ -55,13 +53,6 @@ class Product < ApplicationRecord
   end
 ```
 
-### Review and Like action error handling
-
-<p align="center">
-  <img src="" alt="cart-add-gif"></img>
-</p>
-
-To replicate some validations that a real ecommerce site might have, users of The Verve are only permitted to publish reviews and vote on other users' reviews when logged in and error messages will be displayed if they are not. Similarly, users will also receive an error message after attempting to cast more than one vote on a review. I try to provide clear feedback to the user to explain the cause of the error and next steps.
 
 <h2 id="technologies-used">Technologies used</h2>
 
@@ -82,12 +73,12 @@ To replicate some validations that a real ecommerce site might have, users of Th
 
 <h2 id="future-plans">Planned Features</h2>
 
-- Add transaction table to database to persist transations for a user account and view order history in the account page
-- Add ReCaptcha for user verfication during account creation
-- Allow users to delete reviews that they have posted
+- Users can filter products by category
+- Users/Buyers can bid on products
+- Allow users to edit products that they have listed
 
 
 ### Credit
-- Images are property of Verve Coffee Roasters
-- The Verve does not sell any products or merchandise and is intended for display purposes only
+- Images are property of StockX
+- StockX does not sell any products or merchandise and is intended for display purposes only
 - Improved search functionality (trim whitespace and search for individual keywords)

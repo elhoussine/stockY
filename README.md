@@ -35,7 +35,7 @@ The cart is stored in both in the Redux state and in local storage to persist it
 
 ### Searching for Products
 <p align="center">
-  <img src="" alt="cart-add-gif"></img>
+  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/search_product.png" alt="search product"></img>
 </p>
 
 Typing into the search bar calls a debounced function to request all products from the database that match the query string. Results are queried from the database based on the product names, categories, and ingredient lists. The API request is only sent after 600ms have elapsed since the last keypress to limit load on the database. Once the results are received back, they are dislayed in the search bar result dropdown and each result links to the individual product pages.

@@ -5,61 +5,51 @@ function Footer(props) {
    return (
       <div className="footer">
          <div className="footer-content">
-            <Link to="/products">
             <ul>
                <span>AIR JORDAN</span>
-               <li>Air Jordan 1</li>
-               <li>Jordan Golf Shoes</li>
-               <li>Air Jordan 3</li>
-               <li>Air Jordan 11</li>
-               <li>Air Jordan 4</li>
-               <li>Jordan 1 Mid</li>
+               <li><Link to="/products">Air Jordan 1</Link></li>
+               <li><Link to="/products">Jordan Golf Shoes</Link></li>
+               <li><Link to="/products">Air Jordan 3</Link></li>
+               <li><Link to="/products">Air Jordan 11</Link></li>
+               <li><Link to="/products">Air Jordan 4</Link></li>
+               <li><Link to="/products">Jordan 1 Mid</Link></li>
             </ul>
-            </Link>
-            <Link to="/products">
             <ul>
                <span>YEEZY</span>
-               <li>Yeezy Boost 350</li>
-               <li>Yeezy Boost 350 V2</li>
-               <li>Yeezy Boost 700</li>
-               <li>Yeezy 500</li>
-               <li>Yeezy Slides</li>
-               <li>Yeezy Foam RNNR</li>
+               <li><Link to="/products">Yeezy Boost 350</Link></li>
+               <li><Link to="/products">Yeezy Boost 350 V2</Link></li>
+               <li><Link to="/products">Yeezy Boost 700</Link></li>
+               <li><Link to="/products">Yeezy 500</Link></li>
+               <li><Link to="/products">Yeezy Slides</Link></li>
+               <li><Link to="/products">Yeezy Foam RNNR</Link></li>
             </ul>
-            </Link>
-            <Link to="/products">
             <ul>
                <span>POPULAR RELEASES</span>
-               <li>Yeezy Foam RNNR Sulfur</li>
-               <li>Jordan 2 Union LA Grey Fog</li>
-               <li>Jordan 2 Union LA Rattan</li>
-               <li>New Balance 550 Joe Freshgoods</li>
-               <li>New Balance 2002R Joe Freshgoods</li>
-               <li>Nike Air Force 1 Low White</li>
+               <li><Link to="/products">Yeezy Foam RNNR Sulfur</Link></li>
+               <li><Link to="/products">Jordan 2 Union LA Grey Fog</Link></li>
+               <li><Link to="/products">Jordan 2 Union LA Rattan</Link></li>
+               <li><Link to="/products">New Balance 550 Joe Freshgoods</Link></li>
+               <li><Link to="/products">New Balance 2002R Joe Freshgoods</Link></li>
+               <li><Link to="/products">Nike Air Force 1 Low White</Link></li>
             </ul>
-            </Link>
-            <Link to="/about">
             <ul>
                <span>RESOURCES</span>
-               <li>Partners</li>
-               <li>Developers</li>
-               <li>Community</li>
-               <li>Apps</li>
-               <li>Blog</li>
-               <li>Help Center</li>
+               <li><Link to="/about">Partners</Link></li>
+               <li><Link to="/about">Developers</Link></li>
+               <li><Link to="/about">Community</Link></li>
+               <li><Link to="/about">Apps</Link></li>
+               <li><Link to="/about">Blog</Link></li>
+               <li><Link to="/about">Help Center</Link></li>
             </ul>
-            </Link>
-            <Link to="/about">
             <ul>
-               <span>COMPANY</span>
-               <li>About Us</li>
-               <li>Leadership</li>
-               <li>Investor Relations</li>
-               <li>News</li>
-               <li>Media Kit</li>
-               <li>Careers</li>
+               <span><Link to="/about">COMPANY</Link></span>
+               <li><Link to="/about">About Us</Link></li>
+               <li><Link to="/about">Leadership</Link></li>
+               <li><Link to="/about">Investor Relations</Link></li>
+               <li><Link to="/about">News</Link></li>
+               <li><Link to="/about">Media Kit</Link></li>
+               <li><Link to="/about">Careers</Link></li>
             </ul>
-            </Link>
          </div>
          <hr className="footer-line" />
          <div className="sub-footer-content">

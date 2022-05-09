@@ -20,16 +20,13 @@ div {
 }
 
 #logo-span {
-  width: 10%;
+  width: 13%;
   padding-left: 2.5%;
   // border: 1px sozlid black;
 }
 
 #logo-span>a>img {
-  max-height: 60px;
-  max-width: 116.13px;
-  width: 100%;
-  height: 100%;
+  width: 90%;
 }
 
 #navbar-search-span {
@@ -42,9 +39,8 @@ div {
 }
 
 #navbar-search-outer {
-  height: 45%;
+  height: 55%;
   width: 100%;
-  margin-left: 1%;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -60,13 +56,13 @@ div {
   align-items: center;
   justify-content: center;
   color: black;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 #navbar-search {
   width: 92%;
   height: 50%;
-  font-size: 15px;
+  font-size: 17px;
   border-style: none;
   background-color: #F6F6F6;
   color: black;
@@ -84,7 +80,7 @@ div {
 }
 
 #navbar-nav-ele {
-  width: 45%;
+  width: 35%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -105,10 +101,10 @@ div {
   font-style: normal;
   font-weight: 500;
   white-space: nowrap;
-  font-size: 15px;
+  font-size: 16px;
   text-transform: capitalize;
   padding: 8px 10px;
-  transition: all .3s ease;
+  transition: all .2s ease;
 
   -webkit-transform: scale(1);
   transform: scale(1);

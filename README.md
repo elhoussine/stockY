@@ -1,7 +1,9 @@
 # StockX
 
 <p align="center">
-  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/logo_white.png"></img>
+  <a href="https://stockxy.herokuapp.com/#/">
+    <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/logo_white.png"></img>
+  </a>
 </p>
 
 Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>. This full-stack, single-page app is a clone of the popular e-commerce shoe and clothing marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a> website. I intentionally chose to clone this site so I could connect relevant ecom server logic with a clean and seamless front end experience. 
@@ -22,12 +24,12 @@ Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>. This full-stac
 
 ### List Items for Sale
 <p align="center">
-  <img src="https://github.com/elhoussine/stockY/blob/main/readme_assets/list_items.gif" alt="list items"></img>
+  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/list_items.gif" alt="list items"></img>
 </p>
 
 ### Add Items to the Cart
 <p align="center">
-  <img src="https://github.com/elhoussine/stockY/blob/main/readme_assets/add_to_cart.gif" alt="add to cart"></img>
+  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/add_to_cart.gif" alt="add to cart"></img>
 </p>
 
 The cart is stored in both in the Redux state and in local storage to persist it across a page refresh. After a page refreshes, the cart will be loaded from local storage and then that info will be rendered on the page as if it never changed. Another notable cart feature is that both logged in and logged out users can add items to the cart, but when a user logs out it will clear the cart for privacy purposes.
@@ -35,7 +37,7 @@ The cart is stored in both in the Redux state and in local storage to persist it
 
 ### Searching for Products
 <p align="center">
-  <img src="https://media.giphy.com/media/4XYGnn0hgnIWNbUyF1/giphy.gif" alt="cart-add-gif"></img>
+  <img src="" alt="cart-add-gif"></img>
 </p>
 
 Typing into the search bar calls a debounced function to request all products from the database that match the query string. Results are queried from the database based on the product names, categories, and ingredient lists. The API request is only sent after 600ms have elapsed since the last keypress to limit load on the database. Once the results are received back, they are dislayed in the search bar result dropdown and each result links to the individual product pages. Clicking outside of the result dropdown hides the searchbar.
@@ -56,7 +58,7 @@ class Product < ApplicationRecord
 ### Review and Like action error handling
 
 <p align="center">
-  <img src="https://media.giphy.com/media/2b8x8TifiH8fLJt0e2/giphy.gif" alt="cart-add-gif"></img>
+  <img src="" alt="cart-add-gif"></img>
 </p>
 
 To replicate some validations that a real ecommerce site might have, users of The Verve are only permitted to publish reviews and vote on other users' reviews when logged in and error messages will be displayed if they are not. Similarly, users will also receive an error message after attempting to cast more than one vote on a review. I try to provide clear feedback to the user to explain the cause of the error and next steps.

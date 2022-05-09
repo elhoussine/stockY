@@ -13,10 +13,10 @@ export default ({ product }) => {
         <span className="products-index-tag">
           <ul>
             <li>
-              {product.brand} | {product.category}
+              {product.name}
             </li>
             <li>
-              {product.name}
+              {product.brand} | {product.category}
             </li>
             <li className="product-price">
               ${product.price}

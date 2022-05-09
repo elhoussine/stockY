@@ -4,7 +4,7 @@ Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>. This full-stac
 
 
 <p align="center">
-  <img width="500px" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/index_page.png"></img>
+  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/index_page.png"></img>
 </p>
 
 <h2 id="table-of-contents">Table of Contents</h2>
@@ -18,12 +18,12 @@ Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>. This full-stac
 
 ### List Items for Sale
 <p align="center">
-  <img src="https://im3.ezgif.com/tmp/ezgif-3-766ad35e2b.gif"></img>
+  <img src="https://github.com/elhoussine/stockY/blob/main/readme_assets/list_items.gif" alt="list items"></img>
 </p>
 
-### Adding Items to the Cart
+### Add Items to the Cart
 <p align="center">
-  <img src="https://media.giphy.com/media/pluSLzxAajQd6vytlt/giphy.gif" alt="cart-add-gif"></img>
+  <img src="https://github.com/elhoussine/stockY/blob/main/readme_assets/add_to_cart.gif" alt="add to cart"></img>
 </p>
 
 The cart is stored in both in the Redux state and in local storage to persist it across a page refresh. After a page refreshes, the cart will be loaded from local storage and then that info will be rendered on the page as if it never changed. Another notable cart feature is that both logged in and logged out users can add items to the cart, but when a user logs out it will clear the cart for privacy purposes.

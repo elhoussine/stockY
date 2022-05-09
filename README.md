@@ -40,19 +40,6 @@ The cart is stored in both in the Redux state and in local storage to persist it
 
 Typing into the search bar calls a debounced function to request all products from the database that match the query string. Results are queried from the database based on the product names, categories, and ingredient lists. The API request is only sent after 600ms have elapsed since the last keypress to limit load on the database. Once the results are received back, they are dislayed in the search bar result dropdown and each result links to the individual product pages.
 
-```Ruby
-class Product < ApplicationRecord
-  def self.match_search(query)
-    Product.joins(:categories)
-      .where(
-        "products.product_name LIKE ? 
-        OR categories.name LIKE ? 
-        OR products.ingredients LIKE ?", 
-        "%#{query}%", "%#{query}%", "%#{query}%"
-      ).limit(15)
-  end
-```
-
 
 <h2 id="technologies-used">Technologies used</h2>
 

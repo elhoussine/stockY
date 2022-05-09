@@ -18,7 +18,7 @@ Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>. This full-stac
 
 ### List Items for Sale
 <p align="center">
-  <img src="https://media.giphy.com/media/pluSLzxAajQd6vytlt/giphy.gif" alt="cart-add-gif"></img>
+  <img src="https://im3.ezgif.com/tmp/ezgif-3-766ad35e2b.gif"></img>
 </p>
 
 ### Adding Items to the Cart

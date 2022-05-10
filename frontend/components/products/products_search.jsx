@@ -58,31 +58,31 @@ export default class ProductsSearch extends React.Component {
             }
           }
         }
-        for (let model of prod.style.toLowerCase().split(' ')) {
+        for (let style of prod.style.toLowerCase().split(' ')) {
           for (let term of terms) {
-            if (model.includes(term)) {
+            if (style.includes(term)) {
               if (!filtered.includes(prod)) filtered.push(prod);
               break;
             }
           }
         }
-        for (let colorway of prod.color.toLowerCase().split(' ')) {
+        for (let color of prod.color.toLowerCase().split(' ')) {
           for (let term of terms) {
-            if (colorway.includes(term)) {
+            if (color.includes(term)) {
               if (!filtered.includes(prod)) filtered.push(prod);
 
               break;
             }
           }
         }
-        // for (let style_code of prod.description.toLowerCase().split(' ')) {
-        //   for (let term of terms) {
-        //     if (style_code.includes(term)) {
-        //       if (!filtered.includes(prod)) filtered.push(prod);
-        //       break;
-        //     }
-        //   }
-        // }
+        for (let category of prod.category.toLowerCase().split(' ')) {
+          for (let term of terms) {
+            if (category.includes(term)) {
+              if (!filtered.includes(prod)) filtered.push(prod);
+              break;
+            }
+          }
+        }
 
       }
     }

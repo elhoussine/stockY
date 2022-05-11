@@ -6,7 +6,7 @@
 
 Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>,
 <br>
-This full-stack, single-page app is a functional clone of the popular e-commerce marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a>, that allows users to sell and buy authentic sneakers, clothes, accessories, NFTs and more. I intentionally chose to clone this site so I could connect relevant ecom server logic with a clean and seamless front end experience. 
+This full-stack, single-page app is a functional clone of the popular e-commerce marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a>, that allows users to sell and buy authentic sneakers, clothes, accessories, NFTs and more. I intentionally chose to clone this site so I could connect relevant ecom server logic with a clean and seamless Front End experience. 
 
 <p align="center">
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/index_page.png"></img>
@@ -16,21 +16,24 @@ This full-stack, single-page app is a functional clone of the popular e-commerce
 <h2 id="features">Features</h2>
 
 ### List Items for Sale
-<p align="center">
-  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/list_items.gif" alt="list items"></img>
-</p>
 
 Logged in users can create and list new items for sale under their profile, items could be sneakers, clothes, accessories, NFTs plus more. 
 Users will be then able to view or delete their listing products.
 Shoppers can see listed products, see each product details and make a transaction.
 
-### Add Items to the Cart
 <p align="center">
-  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/add_to_cart.gif" alt="add to cart"></img>
+  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/list_items.gif" alt="list items"></img>
 </p>
+
+### Add Items to the Cart
 
 Users are able to add/remove products to the shopping cart, update items quantity and checkout.
 The cart is stored in the Redux state and in local storage to persist it across a page refresh. After the website refresh, the cart data will be loaded from the client local storage.
+
+
+<p align="center">
+  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/add_to_cart.gif" alt="add to cart"></img>
+</p>
 
 
 ### Searching for Products

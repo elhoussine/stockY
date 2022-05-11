@@ -5,33 +5,32 @@
 </p>
 
 Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>,
-This full-stack, single-page app is a clone of the popular e-commerce shoe and clothing marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a> website. I intentionally chose to clone this site so I could connect relevant ecom server logic with a clean and seamless front end experience. 
-
+<br>
+This full-stack, single-page app is a functional clone of the popular e-commerce marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a>, that allows users to sell and buy authentic sneakers, clothes, accessories, NFTs and more. I intentionally chose to clone this site so I could connect relevant ecom server logic with a clean and seamless front end experience. 
 
 <p align="center">
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/index_page.png"></img>
 </p>
 
-<h2 id="table-of-contents">Table of Contents</h2>
 
-- [Key Features](#features)
-- [Technologies Used](#technologies-used)
-- [Planned Features](#future-plans)
-
-
-<h2 id="features">Key Features</h2>
+<h2 id="features">Features</h2>
 
 ### List Items for Sale
 <p align="center">
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/list_items.gif" alt="list items"></img>
 </p>
 
+Logged in users can create and list new items for sale under their profile, items could be sneakers, clothes, accessories, NFTs plus more. 
+Users will be then able to view or delete their listing products.
+Shoppers can see listed products, see each product details and make a transaction.
+
 ### Add Items to the Cart
 <p align="center">
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/add_to_cart.gif" alt="add to cart"></img>
 </p>
 
-The cart is stored in both in the Redux state and in local storage to persist it across a page refresh. After a page refreshes, the cart will be loaded from local storage and then that info will be rendered on the page as if it never changed. Another notable cart feature is that both logged in and logged out users can add items to the cart, but when a user logs out it will clear the cart for privacy purposes.
+Users are able to add/remove products to the shopping cart, update items quantity and checkout.
+The cart is stored in the Redux state and in local storage to persist it across a page refresh. After the website refresh, the cart data will be loaded from the client local storage.
 
 
 ### Searching for Products
@@ -39,7 +38,7 @@ The cart is stored in both in the Redux state and in local storage to persist it
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/search_product.png" alt="search product"></img>
 </p>
 
-Typing into the search bar calls a debounced function to request all products from the database that match the query string. Results are queried from the database based on the product names, categories, and ingredient lists. The API request is only sent after 600ms have elapsed since the last keypress to limit load on the database. Once the results are received back, they are dislayed in the search bar result dropdown and each result links to the individual product pages.
+The search bar will filter and render products based on the keywords that are typed into the search input.
 
 
 <h2 id="technologies-used">Technologies used</h2>
@@ -54,12 +53,10 @@ Typing into the search bar calls a debounced function to request all products fr
 - __Other__: Amazon AWS S3, JavaScript
   - AWS S3 handles image hosting to allow for a more lightweight and modular implementation of the app.
   - Webpack was used for bundling and Babel.js for transpiling
-  - The Faker gem was used to seed usernames and review content
-  - Autoprefixer gem was used to automatically add vendor prefixes to CSS 
 - __Hosting__: StockY is hosted on heroku.
 
 
-<h2 id="future-plans">Planned Features</h2>
+<h2 id="future-plans">Bonus Features</h2>
 
 - Users can filter products by category
 - Users/Buyers can bid on products

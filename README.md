@@ -37,11 +37,13 @@ The cart is stored in the Redux state and in local storage to persist it across 
 
 
 ### * Search for Products
-<p align="center">
-  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/search_product.png" alt="search product"></img>
-</p>
 
 The search bar will filter and render products based on the keywords that are typed into the search input.
+
+<p align="center">
+  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/product_search.png" alt="search product"></img>
+</p>
+
 
 
 <h2 id="technologies-used">Technologies used</h2>

@@ -15,7 +15,7 @@ This full-stack, single-page app is a functional clone of the popular e-commerce
 
 <h2 id="features">Features</h2>
 
-### List Items for Sale
+### * List Items for Sale
 
 Logged in users can create and list new items for sale under their profile, items could be sneakers, clothes, accessories, NFTs plus more. 
 Users will be then able to view or delete their listing products.
@@ -25,7 +25,7 @@ Shoppers can see listed products, see each product details and make a transactio
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/list_items.gif" alt="list items"></img>
 </p>
 
-### Add Items to the Cart
+### * Add Items to the Cart
 
 Users are able to add/remove products to the shopping cart, update items quantity and checkout.
 The cart is stored in the Redux state and in local storage to persist it across a page refresh. After the website refresh, the cart data will be loaded from the client local storage.
@@ -36,7 +36,7 @@ The cart is stored in the Redux state and in local storage to persist it across 
 </p>
 
 
-### Searching for Products
+### * Search for Products
 <p align="center">
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/search_product.png" alt="search product"></img>
 </p>

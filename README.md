@@ -4,9 +4,8 @@
   </a>
 </p>
 
-Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>
-<br>
-This full-stack, single-page app is a functional clone of the popular e-commerce marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a>, that allows users to sell and buy authentic sneakers, clothes, accessories, NFTs and more. I intentionally chose to clone this site so I could connect relevant e-commerce server logic with a clean and seamless Frontend experience. 
+Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>, this full-stack, single-page app is a functional clone of the popular e-commerce marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a>, that allows users to trade authentic sneakers, clothes, accessories, NFTs, and more.  
+It allows users to create an account or sign in, list/remove products under their profile and upload images, also add, update or remove items from their shopping cart, as well as searching for products.
 
 <p align="center">
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/index_page.png"></img>

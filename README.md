@@ -5,7 +5,7 @@
 </p>
 
 Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>, this full-stack, single-page app is a functional clone of the popular e-commerce marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a>, that allows users to trade authentic sneakers, clothes, accessories, NFTs, and more.  
-It allows users to create an account or sign in, list/remove products under their profile and upload images, also add, update or remove items from their shopping cart, as well as searching for products.
+It allows users to create an account or sign in, list / remove products under their profile and upload images, also add, update or remove items from their shopping cart, as well as searching for products.
 
 <p align="center">
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/index_page.png"></img>
@@ -26,7 +26,7 @@ Shoppers can see listed products, see each product details and make a transactio
 
 ### - Add Items to the Cart
 
-Users are able to add/remove products to the shopping cart, update items quantity and checkout.  
+Users are able to add / remove products to the shopping cart, update items quantity and checkout.  
 The cart is stored in the Redux state and in local storage to persist it across a page refresh. In case the website refreshes, the cart data will be loaded from the client local storage.
 
 
@@ -91,13 +91,13 @@ Then render it at the top of my app, but below Router as follows :
 
 ``` JS
 <Provider store={store}>
-    <HashRouter>
-      <ScrollToTop>
-        <App />
-      </ScrollToTop>
-    </HashRouter>
-  </Provider>
-  ```
+  <HashRouter>
+    <ScrollToTop>
+      <App />
+    </ScrollToTop>
+  </HashRouter>
+</Provider>
+```
 
 <h2 id="future-plans">Bonus Features</h2>
 

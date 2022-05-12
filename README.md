@@ -18,8 +18,7 @@ This full-stack, single-page app is a functional clone of the popular e-commerce
 ### - List Items for Sale
 
 Logged in users can create and list new items for sale under their profile, items could be sneakers, clothes, accessories, NFTs plus more. 
-Users will be then able to view or delete their listing products.
-
+Users will be then able to view or delete their listing products.  
 Shoppers can see listed products, see each product details and make a transaction.
 
 <p align="center">
@@ -28,8 +27,7 @@ Shoppers can see listed products, see each product details and make a transactio
 
 ### - Add Items to the Cart
 
-Users are able to add/remove products to the shopping cart, update items quantity and checkout.
-
+Users are able to add/remove products to the shopping cart, update items quantity and checkout.  
 The cart is stored in the Redux state and in local storage to persist it across a page refresh. In case the website refreshes, the cart data will be loaded from the client local storage.
 
 
@@ -73,8 +71,7 @@ The search bar will filter and render products based on the keywords that are ty
 
 <h2 id="future-plans">Bugs</h2>
 
-When navigating inside this app, to a different component, it is keeping the scroll position from the last navigation. So it won't scroll to top automatically.
-
+When navigating inside this app, to a different component, it is keeping the scroll position from the last navigation. So it won't scroll to top automatically.  
 To solve this problem, I have implemented a ```ScrollToTop``` component that will scroll the window up on every navigation : 
 
 ``` JS 

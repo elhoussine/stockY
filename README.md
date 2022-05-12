@@ -58,14 +58,14 @@ The search bar will filter and render products based on the keywords that are ty
 * AWS S3
 
 - __Back End__: Ruby on Rails, Jbuilder, Active Storage, and PostgreSQL database
-  - The back end was implemented using the Rails MVC framework along with Jbuilder to formulate JSON responses for the API endpoints
+  - The backend was implemented using the Rails MVC framework along with Jbuilder to formulate JSON responses for the API endpoints
   - Active Storage blobs were use to create associations between products and images stored on S3
 - __Front End__: React.js, Redux
   - Supports front-end handling of cart, rendering of pages, and navigation
   - The frontend routes conditionally render components based on the url path and if a user is logged in
   - Persists cart to `localStorage` to maintain cart information through page refresh
 - __Other__: Amazon AWS S3, JavaScript
-  - AWS S3 handles image hosting to allow for a more lightweight and modular implementation of the app.
+  - AWS S3 handles  user image uploads for products reducing server load, fast loading app, and scalability of image services
   - Webpack was used for bundling and Babel.js for transpiling
 - __Hosting__: StockY is hosted on heroku.
 
@@ -109,5 +109,4 @@ Then render it at the top of my app, but below Router as follows :
 
 ### Credit
 - Images are property of StockX
-- StockX does not sell any products or merchandise and is intended for display purposes only
-- Improved search functionality (trim whitespace and search for individual keywords)
+- StockY does not sell any products or merchandise and is intended for display purposes only

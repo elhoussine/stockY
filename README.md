@@ -8,7 +8,7 @@ Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>, this full-stac
 It allows users to create an account or sign in, list / remove products under their profile and upload images, also add, update or remove items from their shopping cart, as well as searching for products.
 
 <p align="center">
-  <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/index_page.png"></img>
+  <img width="100%" src="https://raw.githubusercontent.com/elhoussine/stockY/main/readme_assets/stockY.gif"></img>
 </p>
 
 

@@ -4,8 +4,8 @@
   </a>
 </p>
 
-Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>, this full-stack, single-page app is a functional clone of the popular e-commerce marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a>, that allows users to trade authentic sneakers, clothes, accessories, NFTs, and more.  
-It allows users to create an account or sign in, list / remove products under their profile and upload images, also add, update or remove items from their shopping cart, as well as searching for products.
+Welcome to <a href="https://stockxy.herokuapp.com/#/">StockY</a>, this full-stack, single-page app inspired by the popular e-commerce marketplace <a href="https://www.stockx.com/" target="_blank" rel="noopener noreferrer">StockX</a>. Enables trading of authentic sneakers, clothes, accessories, NFTs, and more. 
+It allows users to create an account or sign in, list/remove products under their profile and upload images, also add, update or remove items from their shopping cart, as well as search for products.
 
 <p align="center">
   <img width="100%" src="https://raw.githubusercontent.com/elhoussine/stockY/main/readme_assets/stockY.gif"></img>
@@ -16,9 +16,9 @@ It allows users to create an account or sign in, list / remove products under th
 
 ### - List Items for Sale
 
-Logged in users can create and list new items for sale under their profile, items could be sneakers, clothes, accessories, NFTs plus more. 
+Logged-in users can create and list new items for sale under their profile, items could be sneakers, clothes, accessories, NFTs plus more. 
 Users will be then able to view or delete their listing products.  
-Shoppers can see listed products, see each product details and make a transaction.
+Shoppers can see listed products, see each product's details and make a transaction.
 
 <p align="center">
   <img width="100%" src="https://github.com/elhoussine/stockY/blob/main/readme_assets/list_items.gif" alt="list items"></img>
@@ -26,8 +26,8 @@ Shoppers can see listed products, see each product details and make a transactio
 
 ### - Add Items to the Cart
 
-Users are able to add / remove products to the shopping cart, update items quantity and checkout.  
-The cart is stored in the Redux state and in local storage to persist it across a page refresh. In case the website refreshes, the cart data will be loaded from the client local storage.
+Users are able to add/remove products to the shopping cart, update item quantity, and checkout.  
+The cart is stored in the Redux state and in local storage to persist it across a page refresh. In case the website refreshes, the cart data will be loaded from the client's local storage.
 
 
 <p align="center">
@@ -58,11 +58,11 @@ The search bar will filter and render products based on the keywords that are ty
 
 - __Back End__: Ruby on Rails, Jbuilder, Active Storage, and PostgreSQL database
   - The backend was implemented using the Rails MVC framework along with Jbuilder to formulate JSON responses for the API endpoints
-  - Active Storage blobs were use to create associations between products and images stored on S3
+  - Active Storage blobs were used to create associations between products and images stored on S3
 - __Front End__: React.js, Redux
-  - Supports front-end handling of cart, rendering of pages, and navigation
-  - The frontend routes conditionally render components based on the url path and if a user is logged in
-  - Persists cart to `localStorage` to maintain cart information through page refresh
+  - Supports front-end handling of the cart, rendering of pages, and navigation
+  - The frontend routes conditionally render components based on the URL path and if a user is logged in
+  - Persists cart to `localStorage` to maintain cart information through a page refresh
 - __Other__: Amazon AWS S3, JavaScript
   - AWS S3 handles  user image uploads for products reducing server load, fast loading app, and scalability of image services
   - Webpack was used for bundling and Babel.js for transpiling
